@@ -56,8 +56,24 @@
         </aside>
         <section>
             <article>
-                <div>Computer</div>
-                <div>Programmer  </div>
+                <style>
+                    #Special{
+                        font-size: 48px;
+                        color: #BD0DFB;
+                        font-weight: bold;
+                    }
+
+                </style>
+                <div> <h1 id="Special">Computer</h1></div>
+                <style>
+                    #Special1{
+                        font-size: 48px;
+                        color: #BD0DFB;
+                        font-weight: bold;
+                    }
+
+                </style>
+                <div><h2 id="Special1">Programmer</h2>  </div>
             </article>
         </section>
     </section>
@@ -81,7 +97,20 @@
             <h1>
                 <dt>About Me</dt>
             </h1>
-            <p>Hello! I’m<span> Jayani Arunika</span>.</p>
+            <style>
+                #Special{
+                    font-size: 48px;
+                    color: #FFFFFF;
+                    font-weight: bold;
+                }
+            </style>
+            <p><h1 id="Special3">Hello! I’m</h1><span>
+             #Special{
+                        font-size: 48px;
+                        color: #FB0404;
+                        font-weight: bold;
+                    }
+            <h2 id="Special4">Jayani Arunika</h2></span>.</p>
             <article>
                 <div>Age :  22 </div>
                 <div> City :  Matara</div>
@@ -229,10 +258,23 @@
             </h5>
             <ul>
 
-            <address >Name</address>
-            <address>Email</address>
-            <address>Subject</address>
-            <address>Message</address>
+            <address >
+                <label for="txtName"> Name</label>
+                <input  name="name" id="txtName" type="text" >
+               </address>
+            <address>
+                <label for="Email">Email</label>
+                <input  name="email" id="Email" type="email">
+                <br>
+                <br>
+               </address>
+            <address> <label for="txtSub"> Subject</label>
+                <input  name="subject" id="txtSub" type="text" ></address>
+            <address>
+                <label for="txtIntro">Message<br></label>
+                <textarea name="intro" id="txtIntro" rows="5"></textarea>
+                <br>
+                <br></address>
             <button>Submit</button>
             </ul>
         </section>
