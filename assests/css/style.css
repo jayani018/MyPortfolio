@@ -456,3 +456,156 @@ body {
 }
 
 /* about section css end  */
+
+/* skills section css start  */
+#skills {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assests/image/background1.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+#skillsMain {
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 15%;
+    bottom: 0;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(243, 240, 240, 0.2);
+    background-image: url(/assests/image/background2.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.skillDescription {
+    position: relative;
+    width: 70%;
+    height: 40%;
+    top: 10%;
+    left: 20%;
+    line-height: 1.5;
+    font-size: 22px;
+    color: #666;
+}
+
+#skillList {
+    position: relative;
+    left: 30%;
+    top: 10%;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    height: 30%;
+}
+
+#skillList>div {
+
+    width: 15%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+
+#skillList>div:hover {
+    transform: scale(1.2);
+}
+
+#skillList>div:nth-child(1) {
+    background-image: url(/assests/logo/java.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#skillList>div:nth-child(2) {
+    background-image: url(/assests/logo/figma.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#skillList>div:nth-child(3) {
+    background-image: url(/assests/logo/mysqlimg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #skillsMain {
+        width: 90vw;
+        height: 80vh;
+        top: 10%;
+    }
+
+    .skillDescription {
+        width: 85%;
+        height: 40%;
+        top: 5%;
+        left: 8%;
+        font-size: 22px;
+    }
+
+    #skillList {
+        width: 80%;
+        height: 30%;
+        left: 10%;
+        top: 20%;
+    }
+
+    #skillList>div {
+        width: 15%;
+        height: 50%;
+        margin: 0 10px;
+    }
+
+    #skillList>div:hover {
+        transform: scale(1.2);
+    }
+}
+
+@media only screen and (max-width: 765px) {
+
+    #skillsMain {
+        width: 90vw;
+        height: 80vh;
+
+        top: 10%;
+    }
+
+    .skillDescription {
+        width: 85%;
+        height: 40%;
+        top: 3%;
+        left: 8%;
+        font-size: 16px;
+    }
+
+    #skillList {
+        width: 80%;
+        height: 20%;
+        left: 10%;
+        top: 20%;
+    }
+
+    #skillList>div {
+        width: 15%;
+        height: 50%;
+        margin: 0 10px;
+    }
+
+    #skillList>div:hover {
+        transform: scale(1.2);
+    }
+}
+
+/* skills section css end  */
