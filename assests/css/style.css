@@ -776,6 +776,120 @@ body {
 
 /* Activities section css end  */
 
+/* gallery section css start  */
+
+#gallery {
+    width: 100vw;
+    height: 150vh;
+    background-image: url(/assests/image/background1.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+
+#galleryMain {
+
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 10%;
+    bottom: 0;
+    width: 80vw;
+    height: 130vh;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(243, 240, 240, 0.2);
+    background-image: url(/assests/image/background2.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#galleryList {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    top: 12%;
+    left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    width: calc((100% - 40px) / 3);
+    height: 20%;
+    box-sizing: border-box;
+    padding: 5px;
+    background: red;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+.gallery-item:nth-child(3n+2) {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.gallery-item:nth-child(3n+1) {
+    margin-right: 10px;
+}
+
+.gallery-item:nth-child(3n+3) {
+    margin-left: 10px;
+}
+
+.gallery-item:nth-child(6n+4),
+.gallery-item:nth-child(6n+5) {
+    width: calc((100% - 30px) / 6 * 2);
+    height: 350px;
+}
+
+.gallery-item:nth-child(6n+6),
+.gallery-item:nth-child(6n+1) {
+    width: calc((100% - 30px) / 6);
+    height: 150px;
+}
+
+.gallery-item:nth-child(6n+2),
+.gallery-item:nth-child(6n+3) {
+    height: 200px;
+}
+
+.titleG {
+    position: relative;
+    width: 20%;
+    height: 8%;
+    border-radius: 15px;
+    top: 8%;
+    left: 5%;
+    background: rgb(51, 50, 50);
+}
+
+.titleG h1 {
+    position: relative;
+    width: max-content;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 20%;
+    font-weight: 1000;
+}
+
+/* gallery section css end  */
+
+
 
 
 
