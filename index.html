@@ -239,49 +239,90 @@
         </div>
     </section>
     <!-- section Gallery end -->
-    <footer>
-        <header>
-            <nav>
-                <menu>
-                    <li><a href="file:///E:/working%20zone/MyyPortfolio/index.html">Home</a></li>
-                    <li><a href="file:///E:/working%20zone/MyyPortfolio/AboutMe.html">About Me</a></li>
-                    <li><a href="file:///E:/working%20zone/MyyPortfolio/Skill.html">Skill</a></li>
-                    <li><a href="file:///E:/working%20zone/MyyPortfolio/Project.html">Projects</a></li>
-                    <li><a href="file:///E:/working%20zone/MyyPortfolio/Activities.html">Activities</a></li>
-                    <li><a href="file:///E:/working%20zone/MyyPortfolio/Gallery.html">Gallery</a></li>
-                    <li>Contact</li>
-                </menu>
-            </nav>
-        </header>
-        <section>
-            <img src="assests/image/background1.png" alt="This is a png icon for background1">
-            <img src="assests/image/background2.png" alt="This is a png icon for background2">
-            <h5>
-                <dt>Contacts</dt>
-            </h5>
-            <ul>
 
-            <address >
-                <label for="txtName"> Name</label>
-                <input  name="name" id="txtName" type="text" >
-               </address>
-            <address>
-                <label for="Email">Email</label>
-                <input  name="email" id="Email" type="email">
-                <br>
-                <br>
-               </address>
-            <address> <label for="txtSub"> Subject</label>
-                <input  name="subject" id="txtSub" type="text" ></address>
-            <address>
-                <label for="txtIntro">Message<br></label>
-                <textarea name="intro" id="txtIntro" rows="5"></textarea>
-                <br>
-                <br></address>
-            <button>Submit</button>
+    <!-- section Contact start -->
+
+    <section id="contact" style="background-image:url(assests/image/background1.png);">
+        <div id="contactMain" style="background-image:url(assests/image/background1.png);">
+            <div class="title">
+                <h1>Contact</h1>
+            </div>
+            <div id="contactForm">
+                <form action="#" method="post">
+                    <div class="form-group">
+
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+
+                        <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- section contact end -->
+
+
+
+    <footer  style="background-image:url(assests/image/background1.png);">
+        <div class="footer-wrapper">
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"> <i class="fab fa-github"></i></a></li>
+                <li><a href="#"> <i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="#"> <i class="far fa-envelope"></i></a></li>
             </ul>
-        </section>
+            <p>&copy; 2023 JayaniArunika. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        const typeDiv = document.querySelector("#typeDiv");
+        const h3List = typeDiv.querySelectorAll("h3");
+
+        function typeWriter(index, delay) {
+            if (index >= h3List.length) {
+                index = 0;
+            }
+
+            const currentH3 = h3List[index];
+            const textContent = currentH3.textContent;
+            currentH3.textContent = "";
+            currentH3.style.opacity = 1;
+
+            let i = 0;
+            const intervalId = setInterval(() => {
+                if (i >= textContent.length) {
+                    clearInterval(intervalId);
+                    setTimeout(() => {
+                        currentH3.style.opacity = 0;
+                        setTimeout(() => {
+                            typeWriter(index + 1, delay);
+                        }, delay);
+                    }, delay * 2);
+                } else {
+                    currentH3.textContent += textContent[i];
+                    i++;
+                }
+            }, delay);
+        }
+
+        typeWriter(0, 200);
+
+    </script>
+
 
 </body>
 </html>
