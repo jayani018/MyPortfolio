@@ -73,3 +73,202 @@ body {
 }
 
 /* nav bar css end  */
+
+
+/* ==================================== */
+
+/* home section css start */
+#home {
+    width: 100vw;
+    height: 100vh;
+    /*background-image: url('assets/images/portfoliopoto/homebg.png');*/
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#mainDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 70%;
+    background: transparent;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(243, 240, 240, 0.2);
+}
+
+#profileDiv {
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 60%;
+    background: #000;
+    border-radius: 50%;
+    overflow: hidden;
+    border-top: 5px solid red;
+    border-right: 5px solid green;
+    border-bottom: 5px solid blue;
+    border-left: 5px solid yellow;
+    transition: transform 0.5s ease-out;
+}
+
+#profileDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#profileDiv:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+#typeDiv {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    height: 60%;
+    text-align: center;
+}
+
+#typeDiv h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ece8e8;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: typeWriter 4s steps(40) forwards;
+
+}
+
+@keyframes typeWriter {
+    from {
+
+
+        width: 100%;
+    }
+
+    to {
+        opacity: 1;
+        width: auto;
+    }
+}
+
+#Sociallinks {
+    position: absolute;
+    width: 5%;
+    height: 70%;
+    top: 15%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#Sociallinks a {
+    display: block;
+    margin: auto;
+}
+
+#Sociallinks div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    margin: 10px;
+}
+
+#Sociallinks div:hover {
+    background-color: #0077B5;
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+    #mainDiv {
+        width: 90%;
+        height: 80%;
+    }
+
+    #profileDiv {
+        left: 50%;
+        top: 25%;
+        width: 50%;
+        height: 40%;
+    }
+
+    #typeDiv {
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+    }
+
+    #typeDiv h3 {
+        font-size: 16px;
+    }
+
+    #Sociallinks {
+        width: 20%;
+        top: 80%;
+        right: 50%;
+        height: 10%;
+        flex-direction: row;
+    }
+
+    #Sociallinks div {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        margin: 3px;
+    }
+}
+
+@media (min-width: 375px) {
+    #Sociallinks div {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        margin: 5px;
+    }
+}
+
+@media (min-width: 425px) {
+    #Sociallinks div {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        margin: 8px;
+    }
+}
+
+
+/* For screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #profileDiv {
+
+        width: 30%;
+        height: 40%;
+        object-fit: cover;
+    }
+
+    #typeDiv h3 {
+        font-size: 20px;
+    }
+
+    #Sociallinks {
+        width: 10%;
+        right: 10%;
+    }
+}
+
+/* home section css end  */
