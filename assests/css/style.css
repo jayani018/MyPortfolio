@@ -16,7 +16,6 @@ body {
     background-color: rgb(66, 66, 68);
 }
 
-
 /* nav bar css start */
 .navbar {
     position: fixed;
@@ -775,6 +774,132 @@ body {
 
 
 /* Activities section css end  */
+
+/* Assignments section css start  */
+
+#assignment {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assests/image/background1.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+
+#assignmentMain {
+
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 15%;
+    bottom: 0;
+    width: 80vw;
+    height: 80vh;
+    /*border-radius: 2social-links0px;*/
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(243, 240, 240, 0.2);
+    background-image: url(/assests/image/background2.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#assignmentList {
+    position: relative;
+    width: 80%;
+    height: 70%;
+    top: 10%;
+    left: 10%;
+
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+#css1 {
+    width: 80%;
+    height: 60%;
+    margin: 5%;
+    background-image: url(/assignment/css/case_one);
+    background-size: cover;
+    background-position: center;
+}
+#css2 {
+    width: 80%;
+    height: 60%;
+    margin: 5%;
+    background-image: url(/assignment/css/case_two);
+    background-size: cover;
+    background-position: center;
+}
+#css3 {
+    width: 80%;
+    height: 60%;
+    margin: 5%;
+    background-image: url(/assignment/css/case_three);
+    background-size: cover;
+    background-position: center;
+}
+#css4 {
+    width: 80%;
+    height: 60%;
+    margin: 5%;
+    background-image: url(/assignment/css/case_four);
+    background-size: cover;
+    background-position: center;
+}
+#css5 {
+    width: 80%;
+    height: 60%;
+    margin: 5%;
+    background-image: url(/assignment/css/CaseFiveAndSix);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+#animations {
+
+    width: 80%;
+    height: 60%;
+    margin: 5%;
+    background-image: url(/assests/image/SQlC.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#transitions {
+
+    width: 80%;
+    height: 60%;
+    margin: 5%;
+    background-image: url(/assests/image/javaC.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#css,
+#animations,
+#transitions {
+
+    transition: transform 0.3s ease-in-out;
+}
+
+#css:hover,
+#animations:hover,
+#transitions:hover {
+    transform: scale(1.2);
+}
+
+
+/* Assignment section css end  */
+
+
+
 
 /* gallery section css start  */
 

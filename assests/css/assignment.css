@@ -1,0 +1,535 @@
+body {
+    overflow-x: hidden;
+}
+
+/*Assignment*/
+
+.title {
+    position: relative;
+    width: 20%;
+    height: 8%;
+    border-radius: 15px;
+    top: 8%;
+    left: 5%;
+    background: rgb(51, 50, 50);
+}
+
+.title h1 {
+    position: relative;
+    width: max-content;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 20%;
+    font-weight: 1000;
+}
+
+
+/*#assignment {*/
+/*    width: 1000vw;*/
+/*    height: 100vh;*/
+/*    background-image: url(/assests/image/background1.png);*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    overflow: hidden;*/
+
+/*}*/
+/*#assignmentMain {*/
+
+/*    position: relative;*/
+/*    margin: auto;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    top: 5%;*/
+/*    bottom: 0;*/
+/*    width: 90%;*/
+/*    height:90%;*/
+/*    border-radius: 20px;*/
+/*    overflow: hidden;*/
+/*    box-shadow: 0 0 10px rgba(243, 240, 240, 0.2);*/
+/*    background-image: url(/assests/image/background2.png);*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+
+/*}*/
+
+
+/*#assignmentsList {*/
+/*    position: relative;*/
+/*    width: 80%;*/
+/*    height: 70%;*/
+/*    top: 10%;*/
+/*    left: 10%;*/
+
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+
+/*}*/
+
+/*.assignments {*/
+/*    width: 40%;*/
+/*    height: 40%;*/
+/*    margin: 5%;*/
+
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
+
+/* gallery section css start  */
+
+#assignment {
+    width: 100vw;
+    height: 1000vh;
+    background-image: url(/assests/image/background1.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+
+#assignmentMain {
+
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 10%;
+    bottom: 0;
+    width: 90vw;
+    height: 130vh;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(243, 240, 240, 0.2);
+    background-image: url(/assests/image/background2.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#assignmentList {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    top: 12%;
+    left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.assignments1 {
+    position: absolute;
+    /*width: calc((100% - 100px) / 3);*/
+    width: 250px;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 70px;*/
+    bottom: 450px;
+    left: 50px;
+    /*bottom: 600px;*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.assignments:hover {
+    transform: scale(1.1);
+}
+.assignments2 {
+    position: absolute;
+    /*width: calc((100% - 40px) / 3);*/
+    width: 250px;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 150px;*/
+    left: 350px;
+    bottom: 450px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.assignments:hover {
+    transform: scale(1.1);
+}
+.assignments3 {
+    position: absolute;
+    /*width: calc((100% - 40px) / 3);*/
+    width: 250px;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 150px;*/
+    left: 650px;
+    bottom: 450px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.assignments:hover {
+    transform: scale(1.1);
+}
+.assignments4 {
+    position: absolute;
+    /*width: calc((100% - 40px) / 3);*/
+    width: 250px;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 150px;*/
+    left: 950px;
+    bottom: 450px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.assignments:hover {
+    transform: scale(1.1);
+}
+.assignments5 {
+    position: absolute;
+    /*width: calc((100% - 40px) / 3);*/
+    width: 250px;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 150px;*/
+    left: 50px;
+    bottom: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.assignments:hover {
+    transform: scale(1.1);
+}
+.assignments6 {
+    position: absolute;
+    /*width: calc((100% - 40px) / 3);*/
+    width: 250px;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 150px;*/
+    left: 350px;
+    bottom:250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.assignments:hover {
+    transform: scale(1.1);
+}
+
+.assignments7 {
+    position: absolute;
+    /*width: calc((100% - 40px) / 3);*/
+    width: 250px;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 150px;*/
+    left: 650px;
+    bottom:250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.assignments:hover {
+    transform: scale(1.1);
+}
+.assignments8 {
+    position: absolute;
+    /*width: calc((100% - 40px) / 3);*/
+    width: 250px;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 150px;*/
+    left: 950px;
+    bottom:250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.assignments:hover {
+    transform: scale(1.1);
+}
+.assignments9 {
+    position: absolute;
+    /*width: calc((100% - 40px) / 3);*/
+    width: 250px;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 150px;*/
+    left: 50px;
+    bottom:50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.assignments:hover {
+    transform: scale(1.1);
+}
+.assignments10 {
+    position: absolute;
+    /*width: calc((100% - 40px) / 3);*/
+    width: 250px;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 150px;*/
+    left: 350px;
+    bottom:50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.assignments:hover {
+    transform: scale(1.1);
+}
+
+.assignments:nth-child(3n+2) {
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.assignments:nth-child(3n+1) {
+    margin-right: 10px;
+    bottom: 50px;
+}
+
+/*.assignments:nth-child(3n+3) {*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*.assignments:nth-child(6n+4),*/
+/*.assignments:nth-child(6n+5) {*/
+/*    width: calc((100% - 30px) / 6 * 2);*/
+/*    height: 350px;*/
+/*}*/
+
+/*.assignments:nth-child(6n+6),*/
+/*.assignments:nth-child(6n+1) {*/
+/*    width: calc((100% - 30px) / 6);*/
+/*    height: 150px;*/
+/*}*/
+
+/*.assignments:nth-child(6n+2),*/
+/*.assignments:nth-child(6n+3) {*/
+/*    height: 200px;*/
+/*}*/
+
+/*.titleG {*/
+/*    position: relative;*/
+/*    width: 20%;*/
+/*    height: 8%;*/
+/*    border-radius: 15px;*/
+/*    top: 8%;*/
+/*    left: 5%;*/
+/*    background: rgb(51, 50, 50);*/
+/*}*/
+
+/*.titleG h1 {*/
+/*    position: relative;*/
+/*    width: max-content;*/
+/*    margin: auto;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    top: 20%;*/
+/*    font-weight: 1000;*/
+/*}*/
+
+/* gallery section css end  */
+
+/*projects*/
+.titleP {
+    position: relative;
+    width: 20%;
+    height: 8%;
+    border-radius: 15px;
+    top: 8%;
+    left: 5%;
+    background: rgb(51, 50, 50);
+}
+.titleP h1 {
+    position: relative;
+    width: max-content;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 20%;
+    font-weight: 1000;
+}
+#projects {
+    width: 100vw;
+    height: 1000vh;
+    background-image: url(/assests/image/background1.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+#projectsMain1 {
+
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 10%;
+    bottom: 0;
+    width: 90vw;
+    height: 130vh;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(243, 240, 240, 0.2);
+    background-image: url(/assests/image/background2.png);
+    background-size: cover;
+    background-position: center;
+
+}
+#projectsList1 {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    top: 12%;
+    left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects1 {
+    position: absolute;
+    /*width: calc((100% - 100px) / 3);*/
+    width: 250px;
+    height: 60%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 70px;*/
+    bottom: 170px;
+    left: 20px;
+    /*bottom: 600px;*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.projects1:hover {
+    transform: scale(1.1);
+}
+.projects2 {
+    position: absolute;
+    /*width: calc((100% - 100px) / 3);*/
+    width: 250px;
+    height: 60%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 70px;*/
+    bottom: 170px;
+    left: 420px;
+    /*bottom: 600px;*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.projects2:hover {
+    transform: scale(1.1);
+}
+.projects3 {
+    position: absolute;
+    /*width: calc((100% - 100px) / 3);*/
+    width: 250px;
+    height: 60%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 70px;*/
+    bottom: 170px;
+    left: 800px;
+    /*bottom: 600px;*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.projects3:hover {
+    transform: scale(1.1);
+}
+.projects4 {
+    position: absolute;
+    /*width: calc((100% - 100px) / 3);*/
+    width: 250px;
+    height: 60%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 70px;*/
+    bottom: -130px;
+    left: 20px;
+    /*bottom: 600px;*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.projects4:hover {
+    transform: scale(1.1);
+}

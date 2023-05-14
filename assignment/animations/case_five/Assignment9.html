@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="../../../assets/css/Normalize.css">
+    <style>
+        section {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        section > section {
+            width: 400%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            animation-name: animation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        div {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        section > section > div:first-child {
+            background: url("../../../assests/image/animationImage/aniPic1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > section > div:nth-child(2) {
+            background: url("../../../assests/image/animationImage/aniPic2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > section > div:nth-child(3) {
+            background: url("../../../assests/image/animationImage/aniPic3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > section > div:last-child {
+            background: url("../../../assests/image/animationImage/aniPic4.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes animation {
+            0% {
+                transform: translate(0)
+            }
+            25% {
+                transform: translate(-25%)
+            }
+            50%{
+                transform: translate(-50%)
+            }
+            75%{
+                transform: translate(-75%)
+            }
+            100%{
+                transform: translate(-75%)
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</section>
+</body>
+</html>

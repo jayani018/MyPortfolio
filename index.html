@@ -19,59 +19,7 @@
           crossorigin="anonymous">
     <script src="https://pro.fontawesome.com/releases/v5.15.3/js/all.js" integrity="..."
             crossorigin="anonymous"></script>
-
-<!--    <style>-->
-<!--        header {-->
-<!--            position: relative;-->
-<!--            box-shadow: -1px 1px 1px 1px gray;-->
-
-<!--            /*background-color: white;*/-->
-<!--        }-->
-<!--        /*header > nav > ul > li {*/-->
-<!--        /*    bottom: 10px;*/-->
-<!--        /*    display: inline-block;*/-->
-<!--        /*}*/-->
-<!--        body>header>nav>ul>li:nth-child(1){-->
-<!--            bottom: 10px;-->
-<!--            display: inline-block;-->
-<!--            display: inline-block;-->
-<!--            position: absolute;-->
-<!--            /*margin: auto;*/-->
-<!--            right: 1000px;-->
-<!--            bottom: 400px;-->
-
-
-<!--        }-->
-<!--        body>header>nav>ul>li:nth-child(2){-->
-<!--            bottom: 10px;-->
-<!--            display: inline-block;-->
-<!--            display: inline-block;-->
-<!--            position: absolute;-->
-<!--            /*margin: auto;*/-->
-<!--            right: 1000px;-->
-<!--            bottom: 400px;-->
-<!--        }-->
-<!--        body>header>nav>ul>li:nth-child(3){-->
-<!--            bottom: 10px;-->
-<!--            display: inline-block;-->
-<!--            display: inline-block;-->
-<!--            position: absolute;-->
-<!--            /*margin: auto;*/-->
-<!--            right: 1000px;-->
-<!--            bottom: 400px;-->
-<!--        }-->
-<!--        body>header>nav>ul>li:nth-child(4){}-->
-<!--        body>header>nav>ul>li:nth-child(5){}-->
-<!--        body>header>nav>ul>li:nth-child(6){}-->
-<!--        body>header>nav>ul>li:nth-child(7){}-->
-
-<!--        section>aside>img{-->
-<!--            position: absolute;-->
-<!--            top: 500px;-->
-<!--            left: 30px;-->
-
-<!--        }-->
-<!--    </style>-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
@@ -86,7 +34,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Projects & Assignments</a></li>
                 <li><a href="#activities">Activities</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -190,8 +138,8 @@
                 <h1>Projects</h1>
             </div>
             <div id="projectList">
-                <div id="project1"  style="background-image:url(assests/image/studentP.png);"></div>
-                <div id="project2"  style="background-image:url(assests/image/hotelPr.png);"></div>
+                <div id="project1" class="projects"  style="background-image:url(assests/image/studentP.png);"></div>
+                <div id="project2" class="projects"  style="background-image:url(assests/image/hotelPr.png);"></div>
                 <!--                    <div id="project3"  style="background-image:url(assets/images/portfoliopoto/asspic8.jpg);"></div>-->
 
             </div>
@@ -217,8 +165,8 @@
 
         </div>
     </section>
-    <!-- section activities end -->
 
+    <!-- section activities end -->
 
 
     <!-- section Gallery start -->
@@ -292,7 +240,8 @@
             <p>&copy; 2023 JayaniArunika. All rights reserved.</p>
         </div>
     </footer>
-
+<!--<script type="text/javascript" src="/jquery/jquery-3.6.0.min.js"></script>-->
+<!--type writer ekt-->
     <script>
         const typeDiv = document.querySelector("#typeDiv");
         const h3List = typeDiv.querySelectorAll("h3");
@@ -327,7 +276,12 @@
         typeWriter(0, 200);
 
     </script>
-
-
+<!--===========================================-->
+<!--link to assignment page-->
+<script>
+    $('.projects').click(function() {
+        window.open('Assignment.html', '_blank');
+    });
+</script>
 </body>
 </html>
