@@ -964,6 +964,7 @@ body {
 .gallery-item:nth-child(3n+2) {
     margin-right: 10px;
     margin-left: 10px;
+
 }
 
 .gallery-item:nth-child(3n+1) {

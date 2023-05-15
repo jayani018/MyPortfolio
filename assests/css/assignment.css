@@ -138,7 +138,7 @@ body {
 
 }
 
-.assignments:hover {
+.assignments1:hover {
     transform: scale(1.1);
 }
 .assignments2 {
@@ -159,7 +159,7 @@ body {
 
 }
 
-.assignments:hover {
+.assignments2:hover {
     transform: scale(1.1);
 }
 .assignments3 {
@@ -180,7 +180,7 @@ body {
 
 }
 
-.assignments:hover {
+.assignments3:hover {
     transform: scale(1.1);
 }
 .assignments4 {
@@ -201,7 +201,7 @@ body {
 
 }
 
-.assignments:hover {
+.assignments4:hover {
     transform: scale(1.1);
 }
 .assignments5 {
@@ -222,7 +222,7 @@ body {
 
 }
 
-.assignments:hover {
+.assignments5:hover {
     transform: scale(1.1);
 }
 .assignments6 {
@@ -243,7 +243,7 @@ body {
 
 }
 
-.assignments:hover {
+.assignments6:hover {
     transform: scale(1.1);
 }
 
@@ -265,7 +265,7 @@ body {
 
 }
 
-.assignments:hover {
+.assignments7:hover {
     transform: scale(1.1);
 }
 .assignments8 {
@@ -286,7 +286,7 @@ body {
 
 }
 
-.assignments:hover {
+.assignments8:hover {
     transform: scale(1.1);
 }
 .assignments9 {
@@ -307,7 +307,7 @@ body {
 
 }
 
-.assignments:hover {
+.assignments9:hover {
     transform: scale(1.1);
 }
 .assignments10 {
@@ -328,7 +328,49 @@ body {
 
 }
 
-.assignments:hover {
+.assignments10:hover {
+    transform: scale(1.1);
+}
+.assignments11 {
+    position: absolute;
+    /*width: calc((100% - 40px) / 3);*/
+    width: 250px;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 150px;*/
+    left: 650px;
+    bottom:50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.assignments11:hover {
+    transform: scale(1.1);
+}
+.assignments12 {
+    position: absolute;
+    /*width: calc((100% - 40px) / 3);*/
+    width: 250px;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 150px;*/
+    left: 950px;
+    bottom:50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.assignments12:hover {
     transform: scale(1.1);
 }
 
@@ -449,7 +491,7 @@ body {
     position: absolute;
     /*width: calc((100% - 100px) / 3);*/
     width: 250px;
-    height: 60%;
+    height: 55%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
@@ -467,11 +509,26 @@ body {
 .projects1:hover {
     transform: scale(1.1);
 }
+.dLink{
+    /*display: none;*/
+    /*position: relative;*/
+    /*top: 200px;*/
+    /*left: 30px;*/
+    font-size: 22px;
+    position: relative;
+    top: 180px;
+    left: 30px;
+
+
+}
+.projects1:hover .dLink{
+    display: block;
+}
 .projects2 {
     position: absolute;
     /*width: calc((100% - 100px) / 3);*/
     width: 250px;
-    height: 60%;
+    height: 55%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
@@ -493,7 +550,7 @@ body {
     position: absolute;
     /*width: calc((100% - 100px) / 3);*/
     width: 250px;
-    height: 60%;
+    height: 55%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
@@ -515,7 +572,7 @@ body {
     position: absolute;
     /*width: calc((100% - 100px) / 3);*/
     width: 250px;
-    height: 60%;
+    height: 55%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
