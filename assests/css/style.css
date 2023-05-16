@@ -2,6 +2,22 @@ body {
     overflow-x: hidden;
 }
 
+/*@keyframes textAnimation {*/
+/*    0% {*/
+/*        width: 0;*/
+/*        background-color: yellow;*/
+/*    }*/
+
+/*    100% {*/
+
+/*    }*/
+/*}*/
+
+
+section,
+nav {
+    animation: textAnimation 2s forwards;
+}
 /* scrollbar color change */
 ::-webkit-scrollbar {
     width: 3px;
@@ -44,9 +60,9 @@ body {
     padding: 14px 16px;
     text-decoration: none;
 }
-
-.navbar li a:hover {
-    background-color: #111;
+.navbar li a:hover,
+.navbar a.active {
+    background-color:#111;
 }
 
 @media screen and (max-width: 600px) {
@@ -86,6 +102,7 @@ body {
     overflow: hidden;
 }
 
+
 #mainDiv {
     position: absolute;
     top: 50%;
@@ -120,32 +137,34 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: .5;
 }
-
+#profileDiv img:hover{
+    opacity: .8;
+}
 #profileDiv:hover {
-    transform: translate(-50%, -50%) scale(1.2);
-}
+    transform: translate(-50%, -50%) scale(1.2)
 
+}
 #typeDiv {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 60%;
-    transform: translate(-50%, -50%);
-    display: inline-block;
-    height: 60%;
-    text-align: center;
-}
-
-#typeDiv h3 {
-    font-size: 30px;
+    font-size:33px;
     font-weight: bold;
     color: #ece8e8;
     letter-spacing: 2px;
-    opacity: 0;
-    animation: typeWriter 4s steps(40) forwards;
+    letter-spacing: 2px;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+    text-align: center;
+    white-space: pre-line;
+     border-right: 2px solid #ebe8e8;
 
+    overflow: hidden;
 }
-
 @keyframes typeWriter {
     from {
 
@@ -945,13 +964,14 @@ body {
 }
 
 .gallery-item {
-    width: calc((100% - 40px) / 3);
-    height: 20%;
+    /*width: calc((100% - 0px) / 3);*/
+    height: 40%;
+    width: 30%;
     box-sizing: border-box;
     padding: 5px;
-    background: red;
+    /*background: red;*/
     margin-bottom: 20px;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     border-radius: 20px;
     transition: transform 0.3s ease;
@@ -959,6 +979,7 @@ body {
 
 .gallery-item:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
 }
 
 .gallery-item:nth-child(3n+2) {
@@ -975,22 +996,22 @@ body {
     margin-left: 10px;
 }
 
-.gallery-item:nth-child(6n+4),
-.gallery-item:nth-child(6n+5) {
-    width: calc((100% - 30px) / 6 * 2);
-    height: 350px;
-}
+/*.gallery-item:nth-child(6n+4),*/
+/*.gallery-item:nth-child(6n+5) {*/
+/*    width: calc((100% - 30px) / 6 * 2);*/
+/*    height: 350px;*/
+/*}*/
 
-.gallery-item:nth-child(6n+6),
-.gallery-item:nth-child(6n+1) {
-    width: calc((100% - 30px) / 6);
-    height: 150px;
-}
+/*.gallery-item:nth-child(6n+6),*/
+/*.gallery-item:nth-child(6n+1) {*/
+/*    width: calc((100% - 30px) / 6);*/
+/*    height: 150px;*/
+/*}*/
 
-.gallery-item:nth-child(6n+2),
-.gallery-item:nth-child(6n+3) {
-    height: 200px;
-}
+/*.gallery-item:nth-child(6n+2),*/
+/*.gallery-item:nth-child(6n+3) {*/
+/*    height: 200px;*/
+/*}*/
 
 .titleG {
     position: relative;
