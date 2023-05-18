@@ -14,10 +14,11 @@ body {
 /*}*/
 
 
-section,
-nav {
-    animation: textAnimation 2s forwards;
-}
+
+/*div,*/
+/*nav {*/
+/*    animation: textAnimation 4s forwards;*/
+/*}*/
 /* scrollbar color change */
 ::-webkit-scrollbar {
     width: 3px;
