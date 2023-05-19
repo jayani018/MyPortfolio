@@ -78,6 +78,35 @@ body {
 
 /* gallery section css start  */
 
+@media only screen and (max-width: 768px) {
+    .title {
+        width: 35%;
+        height: 10%;
+        top: 5%;
+        left: 5%;
+    }
+
+    .title h1 {
+        font-size: 24px;
+        top: 15%;
+    }
+    /*#assignmentsList{*/
+    /*    height: 20px;*/
+    /*}*/
+
+
+    /*titleP{*/
+    /*    width: 35%;*/
+    /*    height: 10%;*/
+    /*    top: 5%;*/
+    /*    left: 5%;*/
+    /*}*/
+    /*.titleP h1 {*/
+    /*    font-size: 24px;*/
+    /*    top: 15%;*/
+    /*}*/
+
+}
 #assignment {
     width: 100vw;
     height: 1000vh;
