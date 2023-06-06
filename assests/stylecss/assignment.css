@@ -109,7 +109,7 @@ body {
 }
 #assignment {
     width: 100vw;
-    height: 1000vh;
+    height: 5000vh;
     background-image: url(/assests/image/background1.png);
     background-size: cover;
     background-position: center;
@@ -127,7 +127,7 @@ body {
     top: 10%;
     bottom: 0;
     width: 90vw;
-    height: 130vh;
+    height: 200vh;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(243, 240, 240, 0.2);
@@ -152,12 +152,12 @@ body {
     position: absolute;
     /*width: calc((100% - 100px) / 3);*/
     width: 250px;
-    height: 20%;
+    height: 15%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
     /*margin-bottom: 70px;*/
-    bottom: 450px;
+    bottom: 800px;
     left: 50px;
     /*bottom: 600px;*/
     background-size: cover;
@@ -174,13 +174,13 @@ body {
     position: absolute;
     /*width: calc((100% - 40px) / 3);*/
     width: 250px;
-    height: 20%;
+    height: 15%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
     /*margin-bottom: 150px;*/
     left: 350px;
-    bottom: 450px;
+    bottom: 800px;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -195,13 +195,13 @@ body {
     position: absolute;
     /*width: calc((100% - 40px) / 3);*/
     width: 250px;
-    height: 20%;
+    height: 15%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
     /*margin-bottom: 150px;*/
     left: 650px;
-    bottom: 450px;
+    bottom: 800px;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -216,13 +216,13 @@ body {
     position: absolute;
     /*width: calc((100% - 40px) / 3);*/
     width: 250px;
-    height: 20%;
+    height: 15%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
     /*margin-bottom: 150px;*/
     left: 950px;
-    bottom: 450px;
+    bottom: 800px;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -237,13 +237,13 @@ body {
     position: absolute;
     /*width: calc((100% - 40px) / 3);*/
     width: 250px;
-    height: 20%;
+    height: 15%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
     /*margin-bottom: 150px;*/
     left: 50px;
-    bottom: 250px;
+    bottom: 570px;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -258,13 +258,13 @@ body {
     position: absolute;
     /*width: calc((100% - 40px) / 3);*/
     width: 250px;
-    height: 20%;
+    height: 15%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
     /*margin-bottom: 150px;*/
     left: 350px;
-    bottom:250px;
+    bottom:570px;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -280,13 +280,13 @@ body {
     position: absolute;
     /*width: calc((100% - 40px) / 3);*/
     width: 250px;
-    height: 20%;
+    height: 15%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
     /*margin-bottom: 150px;*/
     left: 650px;
-    bottom:250px;
+    bottom:570px;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -301,13 +301,13 @@ body {
     position: absolute;
     /*width: calc((100% - 40px) / 3);*/
     width: 250px;
-    height: 20%;
+    height: 15%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
     /*margin-bottom: 150px;*/
     left: 950px;
-    bottom:250px;
+    bottom:570px;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -322,13 +322,13 @@ body {
     position: absolute;
     /*width: calc((100% - 40px) / 3);*/
     width: 250px;
-    height: 20%;
+    height: 15%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
     /*margin-bottom: 150px;*/
     left: 50px;
-    bottom:50px;
+    bottom:350px;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -343,13 +343,13 @@ body {
     position: absolute;
     /*width: calc((100% - 40px) / 3);*/
     width: 250px;
-    height: 20%;
+    height: 15%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
     /*margin-bottom: 150px;*/
     left: 350px;
-    bottom:50px;
+    bottom:350px;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -364,13 +364,13 @@ body {
     position: absolute;
     /*width: calc((100% - 40px) / 3);*/
     width: 250px;
-    height: 20%;
+    height: 15%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
     /*margin-bottom: 150px;*/
     left: 650px;
-    bottom:50px;
+    bottom:350px;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -385,13 +385,13 @@ body {
     position: absolute;
     /*width: calc((100% - 40px) / 3);*/
     width: 250px;
-    height: 20%;
+    height: 15%;
     box-sizing: border-box;
     padding: 50px;
     background: red;
     /*margin-bottom: 150px;*/
     left: 950px;
-    bottom:50px;
+    bottom:350px;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -400,6 +400,48 @@ body {
 }
 
 .assignments12:hover {
+    transform: scale(1.1);
+}
+.assignments13 {
+    position: absolute;
+    /*width: calc((100% - 40px) / 3);*/
+    width: 250px;
+    height: 15%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 150px;*/
+    left: 50px;
+    bottom:130px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.assignments13:hover {
+    transform: scale(1.1);
+}
+.assignments14 {
+    position: absolute;
+    /*width: calc((100% - 40px) / 3);*/
+    width: 250px;
+    height: 15%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 150px;*/
+    left: 350px;
+    bottom:130px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.assignments14:hover {
     transform: scale(1.1);
 }
 
@@ -493,7 +535,7 @@ body {
     margin: auto;
     left: 0;
     right: 0;
-    top: 10%;
+    top: 300px;
     bottom: 0;
     width: 90vw;
     height: 130vh;
