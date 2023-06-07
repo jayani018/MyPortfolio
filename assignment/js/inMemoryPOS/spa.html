@@ -16,7 +16,7 @@
   body {
     background-color: #f2f2f2;
     /* Replace with your desired background color */
-    overflow: hidden;
+    /*overflow: hidden;*/
   }
 
   .navbar {
@@ -144,9 +144,9 @@
   <div class="container mt-4">
     <h3> <i class="fas fa-users"></i> Customer Management</h3>
     <form class="mt-4 ">
-      <div id="cusId" class="form-group">
+      <div  class="form-group">
         <label for="customerId"><i class="fas fa-id-card"></i> Customer ID:</label>
-        <input type="text" class="form-control" id="customerId" required>
+        <input  type="text"  class="form-control" id="customerId" required>
       </div>
       <div  id="cusName" class="form-group">
         <label for="customerName"><i class="fas fa-user"></i> Customer Name:</label>
@@ -161,7 +161,7 @@
         <input type="text" class="form-control" id="customerSalary1" required>
       </div>
 
-      <button type="submit" class="btn btn-primary" id="saveBtn1">
+      <button type="button" class="btn btn-primary" id="saveBtn1">
         <i class="fas fa-save"></i> Save
       </button>
       <button type="button" class="btn btn-secondary" id="searchBtn1">
@@ -180,7 +180,7 @@
     <h3 class="mb-0 mt-4">
       <i class="fas fa-users"></i> Customer Details
     </h3>
-    <table class="table mt-4">
+    <table id="table" class="table mt-4">
       <thead>
       <tr>
         <th><i class="fas fa-id-card"></i> Customer ID</th>
@@ -369,7 +369,7 @@
     <div class="row">
       <div class="col-sm-12">
         <h4><i class="bi bi-cart3 mb-4"></i> Cart Details</h4>
-        <table class="table mt-3">
+        <table class="table mt-3" id="table1">
           <thead>
           <tr>
             <th><i class="bi bi-tag"></i> Item Code</th>
@@ -397,23 +397,22 @@
 
 </section>
 
-<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="jquery-3.7.0.min.js"></script>
+<!--<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 
 
 <script>
-  $("#saveBtn1").click(function () {
-    let id = $("#cusId").val();
-    let name=$("#cusName").value();
-    let address = $("#cusAddress").value();
-    let salary=$("#cusSalary").value();
-    let table=$("#customerTableBody").value();
+  $("#saveBtn1").click(function() {
+    let id = $("#customerId").val();
+    let name = $("#customerName1").val();
+    let address = $("#customerAddress1").val();
+    let salary = $("#customerSalary1").val();
 
-    let tr= `<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${salary}</td></tr>`;
-    table.append(tr);
-
+    let row = `<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${salary}</td></tr>`;
+    $("#customerTableBody").append(row);
   });
 </script>
 
@@ -478,6 +477,7 @@
     $("#placeorderSection").css("display", "none");
 
   });
+
 
   $("#placeorderNav").click(function () {
     $("#placeorderSection").css("display", "block");

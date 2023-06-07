@@ -444,6 +444,27 @@ body {
 .assignments14:hover {
     transform: scale(1.1);
 }
+.assignments15 {
+    position: absolute;
+    /*width: calc((100% - 40px) / 3);*/
+    width: 250px;
+    height: 15%;
+    box-sizing: border-box;
+    padding: 50px;
+    background: red;
+    /*margin-bottom: 150px;*/
+    left: 650px;
+    bottom:130px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.assignments15:hover {
+    transform: scale(1.1);
+}
 
 .assignments:nth-child(3n+2) {
     margin-right: 10px;
