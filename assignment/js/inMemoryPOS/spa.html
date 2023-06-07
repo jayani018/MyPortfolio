@@ -403,51 +403,53 @@
 
 
 
-<!--<script>-->
-<!--  $("#saveBtn1").click(function () {-->
-<!--    let id = $("#cusId").val();-->
-<!--    let name=$("#cusName").value();-->
-<!--    let address = $("#cusAddress").value();-->
-<!--    let salary=$("#cusSalary").value();-->
-<!--    let table=$("#customerTableBody").value();-->
-<!--    -->
-<!--    let tr= "<tr><td>$("")</td>"-->
-<!--  });-->
-<!--</script>-->
-
-
 <script>
+  $("#saveBtn1").click(function () {
+    let id = $("#cusId").val();
+    let name=$("#cusName").value();
+    let address = $("#cusAddress").value();
+    let salary=$("#cusSalary").value();
+    let table=$("#customerTableBody").value();
 
-    let id,name,address,salary;
-    document.getElementById("saveBtn1").addEventListener("click", function () {
-    let id = document.getElementById("cusId").value;
-    let name = document.getElementById("cusName").value;
-    let address = document.getElementById("cusAddress").value;
-    let salary = document.getElementById("customerSalary").value;
-
-    let table = document.getElementById("customerTableBody");
-
-    let tr= document.createElement("tr");
-
-    let col1= document.createElement("td");
-    let col2= document.createElement("td");
-    let col3= document.createElement("td");
-    let col4= document.createElement("td");
-
-    col1.textContent=id;
-    col2.textContent=name;
-    col3.textContent=address;
-    col4.textContent=salary;
-
-    tr.appendChild(col1);
-    tr.appendChild(col2);
-    tr.appendChild(col3);
-    tr.appendChild(col4);
-
-    table.appendChild(tr);
+    let tr= `<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${salary}</td></tr>`;
+    table.append(tr);
 
   });
+</script>
 
+
+<!--<script>-->
+
+<!--    let id,name,address,salary;-->
+<!--    document.getElementById("saveBtn1").addEventListener("click", function () {-->
+<!--    let id = document.getElementById("cusId").value;-->
+<!--    let name = document.getElementById("cusName").value;-->
+<!--    let address = document.getElementById("cusAddress").value;-->
+<!--    let salary = document.getElementById("customerSalary").value;-->
+
+<!--    let table = document.getElementById("customerTableBody");-->
+
+<!--    let tr= document.createElement("tr");-->
+
+<!--    let col1= document.createElement("td");-->
+<!--    let col2= document.createElement("td");-->
+<!--    let col3= document.createElement("td");-->
+<!--    let col4= document.createElement("td");-->
+
+<!--    col1.textContent=id;-->
+<!--    col2.textContent=name;-->
+<!--    col3.textContent=address;-->
+<!--    col4.textContent=salary;-->
+
+<!--    tr.appendChild(col1);-->
+<!--    tr.appendChild(col2);-->
+<!--    tr.appendChild(col3);-->
+<!--    tr.appendChild(col4);-->
+
+<!--    table.appendChild(tr);-->
+
+<!--  });-->
+<script>
 
     $("#customerSection").css("display", "none");
   $("#itemSection").css("display", "none");
