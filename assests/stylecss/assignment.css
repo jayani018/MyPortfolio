@@ -147,401 +147,112 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.assignments{
+    width: 250px;
+    height: 15%;
+    box-sizing: border-box;
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    margin-bottom: 70px;
 
-.assignments1 {
+}
+.assignments:hover {
+    transform: scale(1.1);
+}
+#assignment1 {
     position: absolute;
     /*width: calc((100% - 100px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
     /*margin-bottom: 70px;*/
-    bottom: 770px;
-    left: 50px;
+    bottom: 60%;
+    left: 3%;
     /*bottom: 600px;*/
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
 }
-
-.assignments1:hover {
+#assignment1:hover {
     transform: scale(1.1);
 }
-.assignments2 {
+#assignment2{
     position: absolute;
-    /*width: calc((100% - 40px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 150px;*/
-    left: 350px;
-    bottom: 770px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    left: 25%;
+    bottom: 60%;
 }
-
-.assignments2:hover {
-    transform: scale(1.1);
-}
-.assignments3 {
+#assignment3{
     position: absolute;
-    /*width: calc((100% - 40px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 150px;*/
-    left: 650px;
-    bottom: 770px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    left: 47%;
+    bottom: 60%;
 }
-
-.assignments3:hover {
-    transform: scale(1.1);
-}
-.assignments4 {
+#assignment4{
     position: absolute;
-    /*width: calc((100% - 40px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 150px;*/
-    left: 950px;
-    bottom: 770px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    left: 69%;
+    bottom: 60%;
 }
-
-.assignments4:hover {
-    transform: scale(1.1);
-}
-.assignments5 {
+#assignment5{
     position: absolute;
-    /*width: calc((100% - 40px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 150px;*/
-    left: 50px;
-    bottom: 540px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    left: 3%;
+    bottom: 43%;
 }
-
-.assignments5:hover {
-    transform: scale(1.1);
-}
-.assignments6 {
+#assignment6{
     position: absolute;
-    /*width: calc((100% - 40px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 150px;*/
-    left: 350px;
-    bottom:540px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    left: 25%;
+    bottom: 43%;
 }
-
-.assignments6:hover {
-    transform: scale(1.1);
-}
-
-.assignments7 {
+#assignment7{
     position: absolute;
-    /*width: calc((100% - 40px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 150px;*/
-    left: 650px;
-    bottom:540px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    left: 47%;
+    bottom: 43%;
 }
-
-.assignments7:hover {
-    transform: scale(1.1);
-}
-.assignments8 {
+#assignment8{
     position: absolute;
-    /*width: calc((100% - 40px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 150px;*/
-    left: 950px;
-    bottom:540px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    left: 69%;
+    bottom: 43%;
 }
-
-.assignments8:hover {
-    transform: scale(1.1);
-}
-.assignments9 {
+#assignment9{
     position: absolute;
-    /*width: calc((100% - 40px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 150px;*/
-    left: 50px;
-    bottom:320px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    left: 3%;
+    bottom: 26%;
 }
-
-.assignments9:hover {
-    transform: scale(1.1);
-}
-.assignments10 {
+#assignment10{
     position: absolute;
-    /*width: calc((100% - 40px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 150px;*/
-    left: 350px;
-    bottom:320px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    left: 25%;
+    bottom: 26%;
 }
-
-.assignments10:hover {
-    transform: scale(1.1);
-}
-.assignments11 {
+#assignment11{
     position: absolute;
-    /*width: calc((100% - 40px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 150px;*/
-    left: 650px;
-    bottom:320px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    left: 47%;
+    bottom: 26%;
 }
-
-.assignments11:hover {
-    transform: scale(1.1);
-}
-.assignments12 {
+#assignment12{
     position: absolute;
-    /*width: calc((100% - 40px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 150px;*/
-    left: 950px;
-    bottom:320px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    left: 69%;
+    bottom: 26%;
 }
-
-.assignments12:hover {
-    transform: scale(1.1);
-}
-.assignments13 {
+#assignment13{
     position: absolute;
-    /*width: calc((100% - 40px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 150px;*/
-    left: 50px;
-    bottom:100px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    left: 3%;
+    bottom: 9%;
 }
-
-.assignments13:hover {
-    transform: scale(1.1);
-}
-.assignments14 {
+#assignment14{
     position: absolute;
-    /*width: calc((100% - 40px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 150px;*/
-    left: 350px;
-    bottom:100px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    left: 25%;
+    bottom: 9%;
 }
-
-.assignments14:hover {
-    transform: scale(1.1);
-}
-.assignments15 {
+#assignment15{
     position: absolute;
-    /*width: calc((100% - 40px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 150px;*/
-    left: 650px;
-    bottom:100px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    left: 47%;
+    bottom: 9%;
 }
-
-.assignments15:hover {
-    transform: scale(1.1);
-}
-.assignments16 {
+#assignment16{
     position: absolute;
-    /*width: calc((100% - 40px) / 3);*/
-    width: 250px;
-    height: 15%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 150px;*/
-    left: 950px;
-    bottom:100px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    left: 69%;
+    bottom: 9%;
 }
-
-.assignments16:hover {
-    transform: scale(1.1);
+#assignment17{
+    position: absolute;
+    left: 3%;
+    bottom: -8%;
 }
-.assignments:nth-child(3n+2) {
-    margin-right: 10px;
-    margin-left: 10px;
-
-}
-
-.assignments:nth-child(3n+1) {
-    margin-right: 10px;
-    bottom: 50px;
-}
-
-/*.assignments:nth-child(3n+3) {*/
-/*    margin-left: 10px;*/
-/*}*/
-
-/*.assignments:nth-child(6n+4),*/
-/*.assignments:nth-child(6n+5) {*/
-/*    width: calc((100% - 30px) / 6 * 2);*/
-/*    height: 350px;*/
-/*}*/
-
-/*.assignments:nth-child(6n+6),*/
-/*.assignments:nth-child(6n+1) {*/
-/*    width: calc((100% - 30px) / 6);*/
-/*    height: 150px;*/
-/*}*/
-
-/*.assignments:nth-child(6n+2),*/
-/*.assignments:nth-child(6n+3) {*/
-/*    height: 200px;*/
-/*}*/
-
-/*.titleG {*/
-/*    position: relative;*/
-/*    width: 20%;*/
-/*    height: 8%;*/
-/*    border-radius: 15px;*/
-/*    top: 8%;*/
-/*    left: 5%;*/
-/*    background: rgb(51, 50, 50);*/
-/*}*/
-
-/*.titleG h1 {*/
-/*    position: relative;*/
-/*    width: max-content;*/
-/*    margin: auto;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    bottom: 0;*/
-/*    top: 20%;*/
-/*    font-weight: 1000;*/
-/*}*/
-
-/* gallery section css end  */
-
-/*projects*/
 .titleP {
     position: relative;
     width: 20%;
@@ -598,28 +309,18 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-.projects1 {
+.projects{
     position: absolute;
     /*width: calc((100% - 100px) / 3);*/
-    width: 250px;
+    width: 30%;
     height: 55%;
     box-sizing: border-box;
     padding: 50px;
-    background: red;
     /*margin-bottom: 70px;*/
-    bottom: 170px;
-    left: 20px;
-    /*bottom: 600px;*/
     background-size: cover;
     background-position: center;
     border-radius: 20px;
     transition: transform 0.3s ease;
-
-}
-
-.projects1:hover {
-    transform: scale(1.1);
 }
 .dLink{
     /*display: none;*/
@@ -628,77 +329,31 @@ body {
     /*left: 30px;*/
     font-size: 22px;
     position: relative;
-    top: 180px;
-    left: 30px;
+    top: 110%;
+    left: 50px;
 
 
 }
-.projects1:hover .dLink{
-    display: block;
-}
-.projects2 {
-    position: absolute;
-    /*width: calc((100% - 100px) / 3);*/
-    width: 250px;
-    height: 55%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 70px;*/
-    bottom: 170px;
-    left: 420px;
-    /*bottom: 600px;*/
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
-}
-
-.projects2:hover {
+.projects:hover {
     transform: scale(1.1);
 }
-.projects3 {
+#projects1{
     position: absolute;
-    /*width: calc((100% - 100px) / 3);*/
-    width: 250px;
-    height: 55%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 70px;*/
-    bottom: 170px;
-    left: 800px;
-    /*bottom: 600px;*/
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    bottom: 45%;
+    left: -5%;
 }
-
-.projects3:hover {
-    transform: scale(1.1);
-}
-.projects4 {
+#projects2{
     position: absolute;
-    /*width: calc((100% - 100px) / 3);*/
-    width: 250px;
-    height: 55%;
-    box-sizing: border-box;
-    padding: 50px;
-    background: red;
-    /*margin-bottom: 70px;*/
-    bottom: -130px;
-    left: 20px;
-    /*bottom: 600px;*/
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-
+    bottom: 45%;
+    left: 30%;
 }
-
-.projects4:hover {
-    transform: scale(1.1);
+#projects3{
+    position: absolute;
+    bottom: 45%;
+    left:65%;
+}
+#projects4{
+    position: absolute;
+    bottom: -20%;
+    left: -5%;
 }
