@@ -8,7 +8,7 @@
             background: url("../../../assests/image/assignmentImage/calBCG.jpg");
             /*opacity:.20;*/
         }
-        section{
+        div{
             position: absolute;
             margin: auto;
             top: 0;
@@ -18,25 +18,20 @@
             height: 400px;
             width: 470px;
             background: gray;
-            opacity: .50;
+            opacity: .80;
+
         }
-        section>div{
+        div>button{
             display: flex;
             height: 60px;
             width: 100px;
             background: #0a53be;
             box-shadow: black;
+            font-size: 50px;
+
 
         }
-        section>div:nth-child(1){
-            position: absolute;
-            background: lightsalmon;
-            height: 50px;
-            width: 50px;
-            top: 21px;
-            left: 20px;
-        }
-        section>div:nth-child(2){
+        div>input{
             position: absolute;
             border: black;
             background: black;
@@ -44,143 +39,190 @@
             width: 370px;
             left: 80px;
             top: 20px;
-            opacity: .20;
+            opacity: .50;
         }
-        section>div:nth-child(3){
+        div>div>button:nth-child(1){
+            position: absolute;
+            background: lightsalmon;
+            height: 50px;
+            width: 50px;
+            top: 21px;
+            left: 20px;
+        }
+        /*div>div>button:nth-child(4){*/
+        /*    position: absolute;*/
+        /*    left: 40px;*/
+        /*    top: 5px;*/
+        /*    !*font-size: 50px;*!*/
+        /*}*/
+        div>div>button:nth-child(2){
             position: absolute;
             background: white;
             top: 100px;
             left: 20px;
         }
-        section>div:nth-child(4){
+        div>div>button:nth-child(3){
             position: absolute;
             background: white;
             top: 170px;
             left: 20px;
         }
-        section>div:nth-child(5){
+        div>div>button:nth-child(4){
             position: absolute;
             background: white;
             top: 240px;
             left: 20px;
         }
-        section>div:nth-child(6){
+        div>div>button:nth-child(5){
             position: absolute;
             background: white;
             top: 310px;
             left: 20px;
         }
-        section>div:nth-child(7){
+        div>div>button:nth-child(6){
             position: absolute;
             background: white;
             top: 100px;
             left: 130px;
         }
-        section>div:nth-child(8){
+        div>div>button:nth-child(7){
             position: absolute;
             background: white;
             top: 170px;
             left: 130px;
         }
-        section>div:nth-child(9){
+        div>div>button:nth-child(8){
             position: absolute;
             background: white;
             top: 240px;
             left: 130px;
         }
-        section>div:nth-child(10){
+        div>div>button:nth-child(9){
             position: absolute;
             background: white;
             top: 310px;
             left: 130px;
         }
-        section>div:nth-child(11){
+        div>div>button:nth-child(10){
             position: absolute;
             background: white;
             top: 100px;
             left: 240px;
         }
-        section>div:nth-child(12){
+        div>div>button:nth-child(11){
             position: absolute;
             background: white;
             top: 170px;
             left: 240px;
         }
-        section>div:nth-child(13){
+        div>div>button:nth-child(12){
             position: absolute;
             background: white;
             top: 240px;
             left: 240px;
         }
-        section>div:nth-child(14){
+        div>div>button:nth-child(13){
             position: absolute;
             background:deepskyblue;
             top: 310px;
             left: 240px;
             opacity: .90;
         }
-        section>div:nth-child(15){
+        div>div>button:nth-child(14){
             position: absolute;
             background: lightsalmon;
             top: 100px;
             left: 350px;
         }
-        section>div:nth-child(16){
+        div>div>button:nth-child(15){
             position: absolute;
             background: lightsalmon;
             top: 170px;
             left: 350px;
         }
-        section>div:nth-child(17){
+        div>div>button:nth-child(16){
             position: absolute;
             background: lightsalmon;
             top: 240px;
             left:350px;
             /*opacity: .80;*/
         }
-        section>div:nth-child(18){
+        div>div>button:nth-child(17){
             position: absolute;
             background: lightsalmon;
             top: 310px;
             left: 350px;
             /*opacity: .80;*/
         }
-        section>div>div{
-            position: absolute;
-            left: 40px;
-            top: 5px;
-            font-size: 50px;
-        }
         #clear{
             position: absolute;
             left: 15px;
-            top: -10px;
+            top: 32px;
 
         }
+
     </style>
+
 </head>
 <body>
-<section>
-    <div>
-        <div id="clear">c</div>
+<div id="sectionCal">
+    <input type="text" id="display" disabled>
+    <div class="buttons">
+    <button id="clear" onclick="clearDisplay()">c</button>
+    <button  onclick="appendValue('7')">7</button>
+    <button onclick="appendValue('4')">4</button>
+    <button onclick="appendValue('1')">1</button>
+    <button onclick="appendValue('0')">0</button>
+    <button onclick="appendValue('8')">8</button>
+    <button onclick="appendValue('5')">5</button>
+    <button onclick="appendValue('2')">2</button>
+    <button onclick="appendValue('.')">.</button>
+    <button onclick="appendValue('9')">9</button>
+    <button onclick="appendValue('6')">6</button>
+    <button onclick="appendValue('3')">3</button>
+    <button onclick="calculate()">=</button>
+    <button onclick="appendValue('+')">+</button>
+    <button onclick="appendValue('-')">-</button>
+    <button onclick="appendValue('/')">/</button>
+    <button onclick="appendValue('*')">*</button>
     </div>
-    <div></div>
-    <div><div>7</div></div>
-    <div><div>4</div></div>
-    <div><div>1</div></div>
-    <div><div>0</div></div>
-    <div><div>8</div></div>
-    <div><div>5</div></div>
-    <div><div>2</div></div>
-    <div><div>.</div></div>
-    <div><div>9</div></div>
-    <div><div>6</div></div>
-    <div><div>3</div></div>
-    <div><div>=</div></div>
-    <div><div>+</div></div>
-    <div><div>-</div></div>
-    <div><div>/</div></div>
-    <div><div>*</div></div>
-</section>
+</div>
+<script src="jquery-3.7.0.min.js"></script>
+
+
+    <script>
+        let displayValue = "";
+
+        // Function to update the display
+        function updateDisplay() {
+        document.getElementById("display").value = displayValue;
+    }
+
+        // Function to append a value to the display
+        function appendValue(value) {
+        displayValue += value;
+        updateDisplay();
+    }
+
+        // Function to clear the display
+        function clearDisplay() {
+        displayValue = "";
+        updateDisplay();
+    }
+
+        // Function to perform the calculation
+        function calculate() {
+        let result;
+        try {
+        result = eval(displayValue);
+    } catch (error) {
+        result = "wrong no";
+    }
+        displayValue = result.toString();
+        updateDisplay();
+    }
+
+</script>
+
 </body>
 </html>

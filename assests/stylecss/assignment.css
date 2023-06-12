@@ -253,6 +253,37 @@ body {
     left: 3%;
     bottom: -8%;
 }
+@media only screen and (max-width: 425px) {
+
+    #assignmentMain {
+        width: 90vw;
+        height: 227vh;
+        top: 10%;
+    }
+
+
+    #assignmentsList {
+        row-gap: 5%;
+        column-gap: 2%;
+        /* gap: 1%; */
+        width: 129%;
+        height: 44%;
+        left: 3%;
+        top: 14%;
+
+    }
+
+    #assignmentsList>div {
+        width: 18%;
+        height: 49%;
+        margin: 1px;
+    }
+
+    #assignmentsList>div:hover {
+        transform: scale(1.2);
+    }
+}
+
 .titleP {
     position: relative;
     width: 20%;
