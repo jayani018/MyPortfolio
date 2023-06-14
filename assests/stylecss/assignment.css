@@ -253,34 +253,211 @@ body {
     left: 3%;
     bottom: -8%;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 1440px) {
 
-    #assignmentMain {
-        width: 90vw;
-        height: 227vh;
-        top: 10%;
+}
+@media only screen and (max-width: 1024px) {
+    .assignments{
+        width: 180px;
+        height: 12%;
+        box-sizing: border-box;
+        padding: 50px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+        margin-bottom: 70px;
     }
-
-
-    #assignmentsList {
-        row-gap: 5%;
-        column-gap: 2%;
-        /* gap: 1%; */
-        width: 129%;
-        height: 44%;
+    .assignments:hover {
+        transform: scale(1.1);
+    }
+    #assignment1 {
+        position: absolute;
+        bottom: 65%;
         left: 3%;
-        top: 14%;
-
+    }
+    #assignment2{
+        position: absolute;
+        left: 25%;
+        bottom: 65%;
+    }
+    #assignment3{
+        position: absolute;
+        left: 47%;
+        bottom: 65%;
+    }
+    #assignment4{
+        position: absolute;
+        left: 69%;
+        bottom: 65%;
+    }
+    #assignment5{
+        position: absolute;
+        left: 3%;
+        bottom: 48%;
+    }
+    #assignment6{
+        position: absolute;
+        left: 25%;
+        bottom: 48%;
+    }
+    #assignment7{
+        position: absolute;
+        left: 47%;
+        bottom: 48%;
+    }
+    #assignment8{
+        position: absolute;
+        left: 69%;
+        bottom: 48%;
+    }
+    #assignment9{
+        position: absolute;
+        left: 3%;
+        bottom: 31%;
+    }
+    #assignment10{
+        position: absolute;
+        left: 25%;
+        bottom: 31%;
+    }
+    #assignment11{
+        position: absolute;
+        left: 47%;
+        bottom: 31%;
+    }
+    #assignment12{
+        position: absolute;
+        left: 69%;
+        bottom: 31%;
+    }
+    #assignment13{
+        position: absolute;
+        left: 3%;
+        bottom: 14%;
+    }
+    #assignment14{
+        position: absolute;
+        left: 25%;
+        bottom: 14%;
+    }
+    #assignment15{
+        position: absolute;
+        left: 47%;
+        bottom: 14%;
+    }
+    #assignment16{
+        position: absolute;
+        left: 69%;
+        bottom: 14%;
+    }
+    #assignment17{
+        position: absolute;
+        left: 3%;
+        bottom: -3%;
     }
 
-    #assignmentsList>div {
-        width: 18%;
-        height: 49%;
-        margin: 1px;
-    }
 
-    #assignmentsList>div:hover {
-        transform: scale(1.2);
+
+}
+@media only screen and (max-width: 768px) {
+    .assignments{
+        width: 150px;
+        height: 11%;
+        box-sizing: border-box;
+        padding: 50px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+        margin-bottom: 80px;
+    }
+    #assignment2 {
+        position: absolute;
+        left: 27%;
+    }
+    #assignment3 {
+        position: absolute;
+        left: 51%;
+    }
+    #assignment4 {
+        position: absolute;
+        left: 75%;
+    }
+    #assignment6 {
+        position: absolute;
+        left: 27%;
+    }
+    #assignment7 {
+        position: absolute;
+        left: 51%;
+    }
+    #assignment8 {
+        position: absolute;
+        left: 75%;
+    }
+    #assignment10 {
+        position: absolute;
+        left: 27%;
+    }
+    #assignment11 {
+        position: absolute;
+        left: 51%;
+    }
+    #assignment12 {
+        position: absolute;
+        left: 75%;
+    }
+    #assignment14 {
+        position: absolute;
+        left: 27%;
+    }
+    #assignment15 {
+        position: absolute;
+        left: 51%;
+    }
+    #assignment16 {
+        position: absolute;
+        left: 75%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .assignments{
+        width: 50px;
+        height: 11%;
+        box-sizing: border-box;
+        padding: 40px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+        margin-bottom: 60px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .assignments{
+        width: 5px;
+        height: 13%;
+        box-sizing: border-box;
+        padding: 35px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+        margin-bottom: 35px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .assignments{
+        width: 65px;
+        height: 13%;
+        box-sizing: border-box;
+        padding: 31px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+        margin-bottom: 50px;
     }
 }
 
@@ -387,4 +564,154 @@ body {
     position: absolute;
     bottom: -20%;
     left: -5%;
+}
+@media only screen and (max-width: 1440px) {
+    .dLink{
+        /*display: none;*/
+        /*position: relative;*/
+        /*top: 200px;*/
+        /*left: 30px;*/
+        font-size: 25px;
+        position: relative;
+        top: 104%;
+        left: 50px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .dLink{
+        /*display: none;*/
+        /*position: relative;*/
+        /*top: 200px;*/
+        /*left: 30px;*/
+        font-size: 25px;
+        position: relative;
+        top: 111%;
+        left: 5px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .dLink{
+        /*display: none;*/
+        /*position: relative;*/
+        /*top: 200px;*/
+        /*left: 30px;*/
+        font-size: 25px;
+        position: relative;
+        top: 111%;
+        left: -15px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .dLink{
+        /*display: none;*/
+        /*position: relative;*/
+        /*top: 200px;*/
+        /*left: 30px;*/
+        font-size: 15px;
+        position: relative;
+        top: 125%;
+        left: -30px;
+    }
+    #projectsList1 {
+        position: relative;
+        column-gap:5px;
+        row-gap:5px;
+        width: 95%;
+        height: 60%;
+        top: 12%;
+        left: 7%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .dLink{
+        /*display: none;*/
+        /*position: relative;*/
+        /*top: 200px;*/
+        /*left: 30px;*/
+        font-size: 15px;
+        position: relative;
+        top: 170%;
+        left: -35px;
+    }
+    .projects{
+        position: absolute;
+        /*width: calc((100% - 100px) / 3);*/
+        width: 30%;
+        height: 55%;
+        box-sizing: border-box;
+        padding: 70px;
+        /*margin-bottom: 70px;*/
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+    }
+    #projects1{
+        position: absolute;
+        bottom: 45%;
+        left: -1%;
+    }
+    #projects2{
+        position: absolute;
+        bottom: 45%;
+        left: 50%;
+    }
+    #projects3{
+        position: absolute;
+        bottom: -20%;
+        left:-1%;
+    }
+    #projects4{
+        position: absolute;
+        bottom: -20%;
+        left: 50%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .dLink{
+        /*display: none;*/
+        /*position: relative;*/
+        /*top: 200px;*/
+        /*left: 30px;*/
+        font-size: 15px;
+        position: relative;
+        top: 170%;
+        left: -35px;
+    }
+    .projects{
+        position: absolute;
+        /*width: calc((100% - 100px) / 3);*/
+        width: 5%;
+        height: 50%;
+        box-sizing: border-box;
+        padding: 65px;
+        /*margin-bottom: 70px;*/
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+    }
+    #projects1{
+        position: absolute;
+        bottom: 45%;
+        left: -4%;
+    }
+    #projects2{
+        position: absolute;
+        bottom: 45%;
+        left: 47%;
+    }
+    #projects3{
+        position: absolute;
+        bottom: -20%;
+        left:-4%;
+    }
+    #projects4{
+        position: absolute;
+        bottom: -20%;
+        left: 47%;
+    }
 }

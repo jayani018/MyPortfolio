@@ -1017,6 +1017,36 @@ body {
 /*.gallery-item:nth-child(6n+3) {*/
 /*    height: 200px;*/
 /*}*/
+@media only screen and (max-width: 1440px) {
+
+    #galleryMain {
+        width: 90vw;
+        height: 92vh;
+        top: 10%;
+    }
+
+
+    #galleryList {
+        row-gap: 8%;
+        column-gap: 3%;
+        /* gap: 1%; */
+        width: 80%;
+        height: 40%;
+        left: 3%;
+        top: 14%;
+
+    }
+
+    #galleryList>div {
+        width: 18%;
+        height: 49%;
+        margin: 1px;
+    }
+
+    #galleryList>div:hover {
+        transform: scale(1.2);
+    }
+}
 @media only screen and (max-width: 1024px) {
 
     #galleryMain {
