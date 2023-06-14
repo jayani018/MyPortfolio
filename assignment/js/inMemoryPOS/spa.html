@@ -263,7 +263,7 @@
           <th><i class="fas fa-sort-numeric-up"></i> Item Quantity</th>
         </tr>
         </thead>
-        <tbody>
+        <tbody id="itemTableBody">
         <tr>
           <td>ABC123</td>
           <td>Sample Item</td>
@@ -290,7 +290,7 @@
     <h2><i class="bi bi-bag-check"></i> Place Order</h2>
     <div class="row mt-4">
       <div class="col-sm-4">
-        <form>
+        <form id="invoice">
           <h4><i class="bi bi-file-earmark-text"></i> Invoice</h4>
           <div class="form-group">
             <label for="orderId"><i class="bi bi-hash"></i> Order ID</label>
@@ -299,10 +299,15 @@
           <div class="form-group">
             <label for="orderDate"><i class="bi bi-calendar"></i> Order Date</label>
             <input type="date" class="form-control" id="orderDate">
+
           </div>
           <div class="form-group">
             <label for="customerId"><i class="bi bi-person-badge"></i> Customer ID</label>
             <input type="text" class="form-control" id="customerId1">
+<!--            <label for="invoice-customerNIC" class="form-label">NIC</label>-->
+            <select class="select" id="invoiceCusId" aria-label="Default select example">
+              <option selected>select CustomerId</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="customerName"><i class="bi bi-person"></i> Customer Name</label>
@@ -405,49 +410,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-
-
-<!--<script>-->
-<!--  let customer=[];-->
-<!--  $("#saveBtn1").click(function() {-->
-<!--    let id = $("#customerId").val();-->
-<!--    let name = $("#customerName1").val();-->
-<!--    let address = $("#customerAddress1").val();-->
-<!--    let salary = $("#customerSalary1").val();-->
-
-<!--    let Customer={-->
-<!--      id:"id",-->
-<!--      name:"name",-->
-<!--      address:"address",-->
-<!--      salary:"salary",-->
-
-
-<!--    }-->
-
-
-
-
-<!--    customer.push(customer);-->
-
-
-
-
-<!--  });-->
-<!--  $("#getAllBtn1").click(function () {-->
-<!--    $("#customerTableBody").empty();-->
-<!--    for (let i = 0; i < customer.length; i++) {-->
-<!--      let id = customer[i].id;-->
-<!--      let name = customer[i].name;-->
-<!--      let address = customer[i].address;-->
-<!--      let salary = customer[i].salary;-->
-
-<!--      let row = `<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${salary}</td></tr>`;-->
-<!--      $("#customerTableBody").append(row);-->
-<!--    }-->
-<!--  })-->
-<!--</script>-->
-
-
 <!--<script>-->
 
 <!--    let id,name,address,salary;-->
@@ -481,6 +443,7 @@
 
 <!--  });-->
 <!--</script>-->
+<!---------Customer-->
 <script>
   <!--  data nikm gnna ek-->
   // let customer=[];
@@ -517,7 +480,7 @@
 
     $("#customerTableBody").empty();
 
-    let tableBody = $("#customerTableBody");
+    let tableBodyCus = $("#customerTableBody");
     for (let i = 0; i < customer.length; i++) {
       let tr = `<tr>
                         <td>${customer[i].id}</td>
@@ -528,7 +491,7 @@
 
 
 
-      tableBody.append(tr);
+      tableBodyCus.append(tr);
     }
   });
 
@@ -545,7 +508,53 @@
   //   }
   // });
 </script>
+<!-------Item------------->
 
+<script>
+  let item = [];
+  $("#saveBtn1").click(function () {
+    let code = $("#itemCode").val();
+    let name = $("#itemName").val();
+    let unitPrice = $("#unitPrice").val();
+    let qtyOnHand = $("#qtyOnHand").val();
+
+    item.push({
+      code: code,
+      name: name,
+      unitPrice: unitPrice,
+      qtyOnHand: qtyOnHand
+
+    });
+
+    $("#itemTableBody").empty();
+
+    let tableBodyItem = $("#itemTableBody");
+    for (let i = 0; i < item.length; i++) {
+      let tr = `<tr>
+                        <td>${item[i].code}</td>
+                        <td>${item[i].name}</td>
+                        <td>${item[i].unitPrice}</td>
+                        <td>${item[i].qtyOnHand}</td>
+                     </tr>`
+
+
+
+      tableBodyItem.append(tr);
+    }
+  });
+  $("invoice").click(function () {
+    loadComboBox();
+
+  })
+  /*load customers NIC combobox*/
+  function loadComboBox(){
+    for (let i = 0; i < customer.length; i++) {
+      $("#invoiceCusId").append(
+              `<option>${customer[i].id}</option>`
+      );
+    }
+  }
+</script>
 <script>
 
   $("#customerSection").css("display", "none");
