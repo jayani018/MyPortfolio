@@ -482,7 +482,7 @@
 <!--  });-->
 <!--</script>-->
 <script>
-  <!--  data nikm gnna ek-->
+<!--  data nikm gnna ek-->
   // let customer=[];
   // $("#saveBtn1").click(function() {
   //   let id = $("#customerId").val();
@@ -517,9 +517,9 @@
 
     $("#customerTableBody").empty();
 
-    let tableBody = $("#customerTableBody");
-    for (let i = 0; i < customer.length; i++) {
-      let tr = `<tr>
+        let tableBody = $("#customerTableBody");
+        for (let i = 0; i < customer.length; i++) {
+            let tr = `<tr>
                         <td>${customer[i].id}</td>
                         <td>${customer[i].name}</td>
                         <td>${customer[i].address}</td>
@@ -528,22 +528,22 @@
 
 
 
-      tableBody.append(tr);
-    }
-  });
+            tableBody.append(tr);
+        }
+    });
 
-  // $("#getAllBtn1").click(function () {
-  //   $("#customerTableBody").empty();
-  //   for (let i = 0; i < customer.length; i++) {
-  //     let id = customer[i].id;
-  //     let name = customer[i].name;
-  //     let address = customer[i].address;
-  //     let salary = customer[i].salary;
-  //
-  //     let row = `<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${salary}</td></tr>`;
-  //     $("#customerTableBody").append(row);
-  //   }
-  // });
+// $("#getAllBtn1").click(function () {
+//   $("#customerTableBody").empty();
+//   for (let i = 0; i < customer.length; i++) {
+//     let id = customer[i].id;
+//     let name = customer[i].name;
+//     let address = customer[i].address;
+//     let salary = customer[i].salary;
+//
+//     let row = `<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${salary}</td></tr>`;
+//     $("#customerTableBody").append(row);
+//   }
+// });
 </script>
 
 <script>
