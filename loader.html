@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loader</title>
+
+    <style>
+        #loader {
+            transition: opacity 1s;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: #6c757d;
+        }
+
+        #loader > div {
+            overflow: hidden;
+            width: 290px;
+            height: 290px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            background: url("assests/image/loader/loader.gif");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+<iframe src="http://localhost:63342/MyyPortfolio/index.html?_ijt=d3dldmq3bt365cv3tq28bouscl" width="100%" height="600px" frameborder="0"></iframe>
+
+<div id="loader">
+    <div></div>
+</div>
+<script src="assignment/js/inMemoryPOS/jquery-3.7.0.min.js"></script>
+<script>
+    //so if you think how to do this using the jQuery
+    $(window).on('load',function(){
+        $("#loader").fadeOut(200);
+    });
+
+
+
+    // or
+    $(function (){
+        $("body").prepend("");
+    });
+</script>
+</body>
+</html>

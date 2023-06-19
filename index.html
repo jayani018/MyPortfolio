@@ -23,6 +23,31 @@
     <script src="https://pro.fontawesome.com/releases/v5.15.3/js/all.js" integrity="..."
             crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #loader{
+            position: fixed;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            z-index: 2;
+        }
+        #loader>div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background: url("assests/image/loader.gif");
+            background-size: cover;
+            background-position: center;
+
+        }
+    </style>
 
 </head>
 
@@ -246,6 +271,10 @@
 </footer>
 <!--<script type="text/javascript" src="/jquery/jquery-3.6.0.min.js"></script>-->
 <!--type writer ekt-->
+
+<section id="loader">
+    <div></div>
+</section>
 <script>
 
     const text = [
@@ -347,6 +376,11 @@
         });
         targetNavLink.classList.add('active');
     }
+
+    $(window).on("load",function(){
+        $("#loader").fadeOut(500);
+    })
+
 </script>
 </body>
 </html>
