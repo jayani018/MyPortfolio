@@ -231,14 +231,15 @@
         <input type="text" class="form-control" id="itemName1" required>
       </div>
       <div class="form-group">
-        <label for="itemUnitPrice"><i class="fas fa-dollar-sign"></i> Item Unit Price:</label>
-        <input type="text" class="form-control" id="itemUnitPrice" required>
-      </div>
-      <div class="form-group">
         <label for="itemQuantity"><i class="fas fa-sort-numeric-up"></i> Item Quantity:</label>
         <input type="text" class="form-control" id="itemQuantity" required>
       </div>
-      <button type="submit" class="btn btn-primary" id="saveBtn">
+      <div class="form-group">
+        <label for="itemUnitPrice"><i class="fas fa-dollar-sign"></i> Item Unit Price:</label>
+        <input type="text" class="form-control" id="itemUnitPrice" required>
+      </div>
+
+      <button type="button" class="btn btn-primary" id="saveBtn">
         <i class="fas fa-save"></i> Save
       </button>
       <button type="button" class="btn btn-secondary" id="searchBtn">
@@ -250,6 +251,9 @@
       <button type="button" class="btn btn-warning" id="updateBtn">
         <i class="fas fa-edit"></i> Update
       </button>
+      <button type="button" class="btn btn-outline-info " id="getAllBtn">
+        <i class="fas fa-save"></i> getAll
+      </button>
     </form>
 
     <div class="container mt-4">
@@ -259,22 +263,24 @@
         <tr>
           <th><i class="fas fa-barcode"></i> Item Code</th>
           <th><i class="fas fa-tag"></i> Item Name</th>
-          <th><i class="fas fa-dollar-sign"></i> Item Unit Price</th>
           <th><i class="fas fa-sort-numeric-up"></i> Item Quantity</th>
+          <th><i class="fas fa-dollar-sign"></i> Item Unit Price</th>
         </tr>
         </thead>
-        <tbody>
+        <tbody id="itemTableBody">
         <tr>
           <td>ABC123</td>
           <td>Sample Item</td>
-          <td></i> 10.99</td>
           <td>5</td>
+          <td></i> 10.99</td>
+
         </tr>
         <tr>
           <td>DEF456</td>
           <td>Another Item</td>
-          <td>8.50</td>
           <td>2</td>
+          <td>8.50</td>
+
         </tr>
 
         </tbody>
@@ -404,8 +410,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="db/db.js"></script>
 <script src="model/Customer.js"></script>
+<script src="model/Item.js"></script>
 <script src="controller/CustomerController.js"></script>
+<script src="controller/ItemController.js"></script>
 <script src="controller/validation/CustomerValidation.js"></script>
+<script src="controller/validation/ItemValidation.js"></script>
 
 
 <script>
