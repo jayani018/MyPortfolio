@@ -193,24 +193,24 @@ function checkAll() {
     return true;
 }
 
-function setBtn() {
-    $("#deleteBtn1").prop("disabled", true);
-    $("#updateBtn1").prop("disabled", true);
-
-    if (checkAll()) {
-        $("#saveBtn1").prop("disabled", false);
-    } else {
-        $("#saveBtn1").prop("disabled", true);
-    }
-
-    let id = $("#customerId").val();
-    if (searchCustomer(id) == undefined) {
-        $("#deleteBtn1").prop("disabled", true);
-        $("#updateBtn1").prop("disabled", true);
-    } else {
-        $("#deleteBtn1").prop("disabled", false);
-        $("#updateBtn1").prop("disabled", false);
-    }
-
-}
+// function setBtn() {
+//     $("#deleteBtn1").prop("disabled", true);
+//     $("#updateBtn1").prop("disabled", true);
+//
+//     if (checkAll()) {
+//         $("#saveBtn1").prop("disabled", false);
+//     } else {
+//         $("#saveBtn1").prop("disabled", true);
+//     }
+//
+//     let id = $("#customerId").val();
+//     if (searchCustomer(id) == undefined) {
+//         $("#deleteBtn1").prop("disabled", true);
+//         $("#updateBtn1").prop("disabled", true);
+//     } else {
+//         $("#deleteBtn1").prop("disabled", false);
+//         $("#updateBtn1").prop("disabled", false);
+//     }
+//
+// }
 

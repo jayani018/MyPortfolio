@@ -27,3 +27,15 @@ var addToCart = [
         Total: 50.0
     }
 ];
+var itemCodes = [];
+var placeOrder = [
+    {
+        OrderId:"O00-001",
+        CustomerId:"C00-001",
+        ItemCode: "ABC-001",
+        Total:100.0,
+        Cash: 100.0,
+        Balance:100.0
+    },
+
+];

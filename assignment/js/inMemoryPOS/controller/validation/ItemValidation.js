@@ -15,10 +15,10 @@ function clearItemInputFields() {
     $("#itemCode1,#itemName1,#itemQuantity,#itemUnitPrice").val("");
     $("#itemCode1,#itemName1,#itemQuantity,#itemUnitPrice").css("border", "1px solid #ced4da");
     $("#itemCode1").focus();
-    setItemBtn();
+    // setItemBtn();
 }
 
-setItemBtn();
+// setItemBtn();
 
 //disable tab
 $("#itemCode1,#itemName1,#itemQuantity,#itemUnitPrice").on("keydown keyup", function (e) {
@@ -33,7 +33,7 @@ $("#itemCode1,#itemName1,#itemQuantity,#itemUnitPrice").on("keydown keyup", func
     //check validations
     checkItemValidations(i_vArray[indexNo]);
 
-    setItemBtn();
+    // setItemBtn();
 
     //If the enter key pressed cheque and focus
     if (e.key == "Enter") {
@@ -85,24 +85,24 @@ function checkAllItems() {
     return true;
 }
 
-function setItemBtn() {
-    $("#deleteBtn").prop("disabled", true);
-    $("#updateBtn").prop("disabled", true);
-
-    if (checkAllItems()) {
-        $("#saveBtn").prop("disabled", false);
-    } else {
-        $("#saveBtn").prop("disabled", true);
-    }
-
-    let code = $("#itemCode1").val();
-    if (searchItem(code) == undefined) {
-        $("#deleteBtn").prop("disabled", true);
-        $("#updateBtn").prop("disabled", true);
-    } else {
-        $("#deleteBtn").prop("disabled", false);
-        $("#updateBtn").prop("disabled", false);
-    }
-
-}
+// function setItemBtn() {
+//     $("#deleteBtn").prop("disabled", true);
+//     $("#updateBtn").prop("disabled", true);
+//
+//     if (checkAllItems()) {
+//         $("#saveBtn").prop("disabled", false);
+//     } else {
+//         $("#saveBtn").prop("disabled", true);
+//     }
+//
+//     let code = $("#itemCode1").val();
+//     if (searchItem(code) == undefined) {
+//         $("#deleteBtn").prop("disabled", true);
+//         $("#updateBtn").prop("disabled", true);
+//     } else {
+//         $("#deleteBtn").prop("disabled", false);
+//         $("#updateBtn").prop("disabled", false);
+//     }
+//
+// }
 

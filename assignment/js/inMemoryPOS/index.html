@@ -353,7 +353,7 @@
           </div>
           <button type="button" class="btn btn-primary " id="addToCart"><i class="bi bi-cart-plus" ></i> Add to
             Cart</button>
-          <button type="button" class="btn btn-secondary"><i class="bi bi-x-circle"></i> Clear</button>
+          <button type="button" class="btn btn-secondary" id="clear"><i class="bi bi-x-circle"></i> Clear</button>
         </form>
       </div>
       <div class="col-sm-4">
@@ -375,9 +375,9 @@
             <label for="balance"><i class="bi bi-currency-dollar"></i> Balance</label>
             <input type="text" class="form-control" id="balance">
           </div>
-          <button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i> Place
+          <button type="button" class="btn btn-success" id="placeOrder"><i class="bi bi-check-circle"></i> Place
             Order</button>
-          <button type="button" class="btn btn-danger"><i class="bi bi-x-circle"></i> Cancel</button>
+          <button type="button" class="btn btn-danger" id="cancel"><i class="bi bi-x-circle"></i> Cancel</button>
         </form>
       </div>
     </div>
@@ -394,7 +394,7 @@
             <th><i class="bi bi-cash"></i> Unit Price</th>
             <th><i class="bi bi-list-ol"></i> Qty on Hand</th>
             <th><i class="bi bi-cash"></i> Total</th>
-            <th><i class="bi bi-trash"></i> Delete</th>
+            <th><i class="bi bi-trash " ></i> Delete</th>
           </tr>
           </thead>
           <tbody id="placeOrderTBody">
@@ -406,6 +406,37 @@
             <td>$50</td>
             <td><i class="bi bi-trash del"></i></td>
           </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4><i class="bi bi-cart3 mb-4"></i> Order Details</h4>
+        <table class="table mt-3">
+          <thead>
+          <tr>
+            <th><i class="bi bi-tag"></i> Order ID</th>
+            <th><i class="bi bi-card-text"></i> Customer ID</th>
+            <th><i class="bi bi-cash"></i> Item Code</th>
+            <th><i class="bi bi-list-ol"></i> Cash</th>
+            <th><i class="bi bi-cash"></i> Balance</th>
+            <th><i class="bi bi-cash"></i> Total</th>
+            <th><i class="bi bi-trash" id="deleteOrder"></i> Delete</th>
+          </tr>
+          </thead>
+          <tbody id="orderTBody">
+<!--          <tr>-->
+<!--            <td>O99-999</td>-->
+<!--            <td>Item 1</td>-->
+<!--            <td>$10</td>-->
+<!--            <td>5</td>-->
+<!--            <td>$50</td>-->
+<!--            <td>$50</td>-->
+<!--            <td><i class="bi bi-trash del"></i></td>-->
+<!--          </tr>-->
           </tbody>
         </table>
       </div>
