@@ -85,6 +85,8 @@ function saveItem() {
 
         //add item record to the item array (DB)
         itemDB.push(newItem);
+        console.table(itemDB);
+        updateSelectorItem();
         clearItemInputFields();
         getAllItems();
 

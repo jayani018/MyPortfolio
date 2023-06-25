@@ -308,8 +308,12 @@
           </div>
           <div class="form-group">
             <label for="customerId"><i class="bi bi-person-badge"></i> Customer ID</label>
-            <input type="text" class="form-control" id="customerId1">
+            <select class="form-control" id="customerId1">
+
+              <option value="">-- Select a customer --</option>
+            </select>
           </div>
+
           <div class="form-group">
             <label for="customerName"><i class="bi bi-person"></i> Customer Name</label>
             <input type="text" class="form-control" id="customerName">
@@ -329,7 +333,11 @@
           <h4><i class="bi bi-cart-plus"></i> Items</h4>
           <div class="form-group">
             <label for="itemCode"><i class="bi bi-tag"></i> Item Code</label>
-            <input type="text" class="form-control" id="itemCode">
+<!--            <input type="text" class="form-control" id="itemCode">-->
+            <select class="form-control" id="itemCode">
+
+              <option value="">-- Select a item --</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="itemName"><i class="bi bi-card-list"></i> Item Name</label>
@@ -343,7 +351,7 @@
             <label for="qtyOnHand"><i class="bi bi-archive"></i> Qty On Hand</label>
             <input type="text" class="form-control" id="qtyOnHand">
           </div>
-          <button type="button" class="btn btn-primary"><i class="bi bi-cart-plus"></i> Add to
+          <button type="button" class="btn btn-primary " id="addToCart"><i class="bi bi-cart-plus" ></i> Add to
             Cart</button>
           <button type="button" class="btn btn-secondary"><i class="bi bi-x-circle"></i> Clear</button>
         </form>
@@ -389,7 +397,7 @@
             <th><i class="bi bi-trash"></i> Delete</th>
           </tr>
           </thead>
-          <tbody>
+          <tbody id="placeOrderTBody">
           <tr>
             <td>001</td>
             <td>Item 1</td>
@@ -411,8 +419,10 @@
 <script src="db/db.js"></script>
 <script src="model/Customer.js"></script>
 <script src="model/Item.js"></script>
+<script src="model/Order.js"></script>
 <script src="controller/CustomerController.js"></script>
 <script src="controller/ItemController.js"></script>
+<script src="controller/OrderController.js"></script>
 <script src="controller/validation/CustomerValidation.js"></script>
 <script src="controller/validation/ItemValidation.js"></script>
 

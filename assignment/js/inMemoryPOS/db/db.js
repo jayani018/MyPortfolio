@@ -9,4 +9,21 @@ var itemDB = [
     {code:"I00-002",name:"Sunlight",qtyOnHand: 150,unitPrice: 345.00},
     {code:"I00-003",name:"Light Boy",qtyOnHand: 400,unitPrice: 245.00}
 ];
-// var orderDB = [];
+var orderDB = [];
+
+var addToCart = [
+    {
+        ItemCode: "ABC-001",
+        Name: "Example Item",
+        UnitPrice:10,
+        QtyOnHand: 10,
+        Total: 100.0
+    },
+    {
+        ItemCod: "DEF-002",
+        Name: "Another Item",
+        UnitPrice:10,
+        QtyOnHand: 5,
+        Total: 50.0
+    }
+];
