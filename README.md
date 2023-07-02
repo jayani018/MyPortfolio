@@ -2,6 +2,13 @@
 
 This README file provides an overview of my portfolio, showcasing my projects, design work, and development skills.
 
+## Screenshots
+Here are some screenshots of my projects:
+
+![Screenshot 1](/assests/readme/ss path eka denna methnta)
+![Screenshot 2](/assests/readme/ss path eka denna methnta)
+![Screenshot 3](/assests/readme/ss path eka denna methnta)
+
 ## Figma Link
 You can access my design work on Figma by following this link: [Figma Portfolio](https://www.figma.com/file/hf92OpJIBKHP0OU91NJFPC/Mockup?type=design&node-id=0-1&mode=design)
 
@@ -16,13 +23,6 @@ You can view the site map for my projects by following this link: [Site Map](htt
 
 ## Wireframe URL
 To see the wireframes of my design projects, you can visit this link: [Wireframe](https://drive.google.com/file/d/1uP3-gZfIVoulsAT27dKuzlpzgmVa-dVO/view?usp=sharing)
-
-## Screenshots
-Here are some screenshots of my projects:
-
-![Screenshot 1](/assests/readme/ss path eka denna methnta)
-![Screenshot 2](/assests/readme/ss path eka denna methnta)
-![Screenshot 3](/assests/readme/ss path eka denna methnta)
 
 ## Description
 In my portfolio, you will find a collection of my design and development projects. I specialize in the following technologies:

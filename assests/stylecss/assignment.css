@@ -88,7 +88,7 @@ body {
 
     .title h1 {
         font-size: 24px;
-        top: 15%;
+        top: 30%;
     }
     /*#assignmentsList{*/
     /*    height: 20px;*/
@@ -254,6 +254,31 @@ body {
     bottom: -8%;
 }
 @media only screen and (max-width: 1440px) {
+    .title {
+        width: 15%;
+        height: 10%;
+        top: 2%;
+        left: 5%;
+    }
+
+    .title h1 {
+        font-size: 24px;
+        top: 30%;
+    }
+    .assignments{
+        width: 180px;
+        height: 12%;
+        box-sizing: border-box;
+        padding: 50px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+        margin-bottom: 100px;
+    }
+    .assignments:hover {
+        transform: scale(1.1);
+    }
 
 }
 @media only screen and (max-width: 1024px) {
@@ -273,94 +298,105 @@ body {
     }
     #assignment1 {
         position: absolute;
-        bottom: 65%;
+        bottom: 62%;
         left: 3%;
     }
     #assignment2{
         position: absolute;
         left: 25%;
-        bottom: 65%;
+        bottom: 62%;
     }
     #assignment3{
         position: absolute;
         left: 47%;
-        bottom: 65%;
+        bottom: 62%;
     }
     #assignment4{
         position: absolute;
         left: 69%;
-        bottom: 65%;
+        bottom: 62%;
     }
     #assignment5{
         position: absolute;
         left: 3%;
-        bottom: 48%;
+        bottom: 45%;
     }
     #assignment6{
         position: absolute;
         left: 25%;
-        bottom: 48%;
+        bottom: 45%;
     }
     #assignment7{
         position: absolute;
         left: 47%;
-        bottom: 48%;
+        bottom: 45%;
     }
     #assignment8{
         position: absolute;
         left: 69%;
-        bottom: 48%;
+        bottom: 45%;
     }
     #assignment9{
         position: absolute;
         left: 3%;
-        bottom: 31%;
+        bottom: 28%;
     }
     #assignment10{
         position: absolute;
         left: 25%;
-        bottom: 31%;
+        bottom: 28%;
     }
     #assignment11{
         position: absolute;
         left: 47%;
-        bottom: 31%;
+        bottom: 28%;
     }
     #assignment12{
         position: absolute;
         left: 69%;
-        bottom: 31%;
+        bottom: 28%;
     }
     #assignment13{
         position: absolute;
         left: 3%;
-        bottom: 14%;
+        bottom: 11%;
     }
     #assignment14{
         position: absolute;
         left: 25%;
-        bottom: 14%;
+        bottom: 11%;
     }
     #assignment15{
         position: absolute;
         left: 47%;
-        bottom: 14%;
+        bottom: 11%;
     }
     #assignment16{
         position: absolute;
         left: 69%;
-        bottom: 14%;
+        bottom: 11%;
     }
     #assignment17{
         position: absolute;
         left: 3%;
-        bottom: -3%;
+        bottom: -6%;
     }
 
 
 
 }
 @media only screen and (max-width: 768px) {
+    .title {
+        width: 50%;
+        height: 10%;
+        top: 2%;
+        left: 5%;
+    }
+
+    .title h1 {
+        font-size: 24px;
+        top: 30%;
+    }
     .assignments{
         width: 150px;
         height: 11%;
@@ -435,6 +471,17 @@ body {
     }
 }
 @media only screen and (max-width: 375px) {
+    .title {
+        width: 50%;
+        height: 10%;
+        top: 2%;
+        left: 5%;
+    }
+
+    .title h1 {
+        font-size: 24px;
+        top: 30%;
+    }
     .assignments{
         width: 5px;
         height: 13%;
@@ -444,20 +491,31 @@ body {
         background-position: center;
         border-radius: 20px;
         transition: transform 0.3s ease;
-        margin-bottom: 35px;
+        margin-bottom: 80px;
     }
 }
 @media only screen and (max-width: 320px) {
+    .title {
+        width: 50%;
+        height: 10%;
+        top: 5%;
+        left: 5%;
+    }
+
+    .title h1 {
+        font-size: 24px;
+        top: 30%;
+    }
     .assignments{
         width: 65px;
-        height: 13%;
+        height: 12%;
         box-sizing: border-box;
         padding: 31px;
         background-size: cover;
         background-position: center;
         border-radius: 20px;
         transition: transform 0.3s ease;
-        margin-bottom: 50px;
+        margin-bottom: 65px;
     }
 }
 
@@ -566,6 +624,25 @@ body {
     left: -5%;
 }
 @media only screen and (max-width: 1440px) {
+    .titleP {
+        position: relative;
+        width: 15%;
+        height: 10%;
+        border-radius: 15px;
+        top: 8%;
+        left: 5%;
+        background: rgb(51, 50, 50);
+    }
+    .titleP h1 {
+        position: relative;
+        width: max-content;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 20%;
+        font-weight: 1000;
+    }
     .dLink{
         /*display: none;*/
         /*position: relative;*/
@@ -590,6 +667,25 @@ body {
     }
 }
 @media only screen and (max-width: 768px) {
+    .titleP {
+        position: relative;
+        width: 20%;
+        height: 10%;
+        border-radius: 15px;
+        top: 8%;
+        left: 5%;
+        background: rgb(51, 50, 50);
+    }
+    .titleP h1 {
+        position: relative;
+        width: max-content;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 20%;
+        font-weight: 1000;
+    }
     .dLink{
         /*display: none;*/
         /*position: relative;*/
@@ -602,6 +698,25 @@ body {
     }
 }
 @media only screen and (max-width: 425px) {
+    .titleP {
+        position: relative;
+        width: 35%;
+        height: 10%;
+        border-radius: 15px;
+        top: 8%;
+        left: 5%;
+        background: rgb(51, 50, 50);
+    }
+    .titleP h1 {
+        position: relative;
+        width: max-content;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 20%;
+        font-weight: 1000;
+    }
     .dLink{
         /*display: none;*/
         /*position: relative;*/
@@ -671,6 +786,25 @@ body {
     }
 }
 @media only screen and (max-width: 320px) {
+    .titleP {
+        position: relative;
+        width: 45%;
+        height: 10%;
+        border-radius: 15px;
+        top: 8%;
+        left: 5%;
+        background: rgb(51, 50, 50);
+    }
+    .titleP h1 {
+        position: relative;
+        width: max-content;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 20%;
+        font-weight: 1000;
+    }
     .dLink{
         /*display: none;*/
         /*position: relative;*/

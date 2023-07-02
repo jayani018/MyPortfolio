@@ -389,7 +389,7 @@ body {
         height: 60%;
         top: 9%;
         left: 8%;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .description ul {
@@ -629,6 +629,15 @@ body {
     background-size: cover;
     background-position: center;
 }
+@media only screen and (max-width: 1024px) {
+    .skillDescription {
+        width: 85%;
+        height: 40%;
+        top: 5%;
+        left: 8%;
+        font-size: 22px;
+    }
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -837,13 +846,23 @@ body {
         display: flex;
         justify-content: space-between;
     }
+    #project2 {
+        position:relative;
+        left:-5px;
+        width: 60%;
+        height: 80%;
+        margin: 5%;
+        background-image: url(/assests/image/hotelPr.png);
+        background-size: cover;
+        background-position: center;
+    }
 }
 @media only screen and (max-width: 320px) {
     #projectList {
         position: relative;
         width: 100%;
         height: 30%;
-        top: 20%;
+        top: 30%;
         left: 1%;
         display: flex;
         justify-content: space-between;
@@ -861,6 +880,16 @@ body {
         border-radius: 20px;
         overflow: hidden;
         box-shadow: 0 0 10px rgba(243, 240, 240, 0.2);
+    }
+    #project2 {
+        position:relative;
+        left:-5px;
+        width: 60%;
+        height: 80%;
+        margin: 5%;
+        background-image: url(/assests/image/hotelPr.png);
+        background-size: cover;
+        background-position: center;
     }
     #project1:hover,
     #project2:hover {
@@ -901,60 +930,6 @@ body {
     background-size: cover;
     background-position: center;
 
-}
-
-#activitiesList {
-    position: relative;
-    width: 80%;
-    height: 70%;
-    top: 10%;
-    left: 10%;
-
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-}
-
-#activities1 {
-    width: 80%;
-    height: 60%;
-    margin: 5%;
-    background-image: url(/assests/image/javaC.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#activities2 {
-
-    width: 80%;
-    height: 60%;
-    margin: 5%;
-    background-image: url(/assests/image/SQlC.png);
-    background-size: cover;
-    background-position: center;
-}
-
-#activities3 {
-
-    width: 80%;
-    height: 60%;
-    margin: 5%;
-    background-image: url(/assests/image/javaC.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#activities1,
-#activities2,
-#activities3 {
-
-    transition: transform 0.3s ease-in-out;
-}
-
-#activities1:hover,
-#activities2:hover,
-#activities3:hover {
-    transform: scale(1.2);
 }
 @media only screen and (max-width: 1440px) {
     #activitiesList {
@@ -1005,13 +980,66 @@ body {
         background-position: center;
     }
 }
+#activitiesList {
+    position: relative;
+    width: 30%;
+    height: 70%;
+    top: 35%;
+    left: 18%;
+
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+#activities1 {
+    width: 80%;
+    height: 60%;
+    margin: 5%;
+    background-image: url(/assests/image/javaC.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#activities2 {
+
+    width: 80%;
+    height: 60%;
+    margin: 5%;
+    background-image: url(/assests/image/SQlC.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#activities3 {
+
+    width: 80%;
+    height: 60%;
+    margin: 5%;
+    background-image: url(/assests/image/javaC.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#activities1,
+#activities2,
+#activities3 {
+
+    transition: transform 0.3s ease-in-out;
+}
+
+#activities1:hover,
+#activities2:hover,
+#activities3:hover {
+    transform: scale(1.2);
+}
 @media only screen and (max-width: 1024px) {
     #activitiesList {
         position: relative;
-        width: 80%;
-        height: 40%;
-        top: 15%;
-        left: 7%;
+        width: 70%;
+        height: 50%;
+        top: 35%;
+        left: 3%;
         /*         padding:50px; */
 
         display: flex;
@@ -1020,8 +1048,8 @@ body {
     }
     #activities1 {
         position:absolute;
-        top:-40px;
-        left:10px;
+        top:-60px;
+        left:-20px;
         width: 40%;
         height: 80%;
         margin:5%;
@@ -1032,8 +1060,8 @@ body {
     }
     #activities2 {
         position:absolute;
-        top:-40px;
-        left:350px;
+        top:-60px;
+        left:500px;
         width: 40%;
         height: 80%;
         margin: 5%;
@@ -1044,8 +1072,8 @@ body {
 
     #activities3 {
         position:absolute;
-        top:150px;
-        left:150px;
+        top:-60px;
+        left:238px;
         width: 40%;
         height: 80%;
         margin: 5%;
@@ -1703,7 +1731,7 @@ body {
 #contactForm {
     position: relative;
     width: 80%;
-    height: 100%;
+    height: 70%;
     top: 12%;
     left: 10%;
 
@@ -1758,7 +1786,7 @@ button[type="submit"]:hover {
         position: relative;
         width: 80%;
         height: 70%;
-        top:15%;
+        top: 10%;
         left: 7%;
 
         display: flex;
@@ -1766,10 +1794,52 @@ button[type="submit"]:hover {
         justify-content: space-between;
     }
     textarea {
-        height: 200px;
+        height: 80px;
         resize: vertical;
     }
+    button[type="submit"] {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: #350c0c;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
 }
+@media only screen and (max-width: 1024px) {
+    #contactForm {
+        position: relative;
+        width: 80%;
+        height: 70%;
+        top: 8%;
+        left: 7%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    textarea {
+        height: 80px;
+        resize: vertical;
+    }
+    button[type="submit"] {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: #350c0c;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     #contactForm {
         position: relative;
