@@ -613,7 +613,7 @@ body {
 }
 
 #skillList>div:nth-child(1) {
-    background-image: url(/assests/logo/java.png);
+    background-image: url(/assests/logo/java1.png);
     background-size: cover;
     background-position: center;
 }
